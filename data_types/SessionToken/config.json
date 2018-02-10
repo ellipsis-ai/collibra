@@ -1,0 +1,17 @@
+{
+  "exportId" : "mkHJUDNHQy6E9_1BVcQ_eQ",
+  "name" : "SessionToken",
+  "forcePrivateResponse" : false,
+  "isDataType" : true,
+  "dataTypeConfig" : {
+    "fields" : [ {
+      "name" : "token",
+      "fieldType" : {
+        "exportId" : "Text",
+        "name" : "Text"
+      },
+      "isLabel" : false
+    } ],
+    "usesCode" : false
+  }
+}

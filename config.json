@@ -1,0 +1,8 @@
+{
+  "name" : "Collibra",
+  "exportId" : "ohUdi0qUTnKzs3t_jdmx6w",
+  "icon" : "🔮",
+  "requiredAWSConfigs" : [ ],
+  "requiredOAuth2ApiConfigs" : [ ],
+  "requiredSimpleTokenApis" : [ ]
+}
