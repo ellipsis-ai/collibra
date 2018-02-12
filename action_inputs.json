@@ -1,1 +1,11 @@
-[ ]
+[ {
+  "exportId" : "kLK4L3ixT_iNGPmntlUURQ",
+  "name" : "assetName",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What type do you want a definition for?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+} ]
