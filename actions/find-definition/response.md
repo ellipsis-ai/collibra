@@ -1,8 +1,5 @@
-I found {successResult.count} matches for "{assetName}".
+[{successResult.name}]({successResult.link}) is defined as:
 
-They are:
-
-{for result in successResult.results}
-- [{result.asset.name}]({result.link}) {if result.hasDefinition}has definition "{result.definition}"{else}has no definition yet{endif}
-
+{for definition in successResult.definitions}
+- "{definition}"
 {endfor}

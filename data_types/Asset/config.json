@@ -1,0 +1,10 @@
+{
+  "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
+  "name" : "Asset",
+  "forcePrivateResponse" : false,
+  "isDataType" : true,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}
