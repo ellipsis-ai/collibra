@@ -1,14 +1,4 @@
 [ {
-  "exportId" : "-vglXOAqRgyjAbIdUnbMHQ",
-  "name" : "assetName",
-  "paramType" : {
-    "exportId" : "Text",
-    "name" : "Text"
-  },
-  "question" : "What is the value for `assetName`?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
   "exportId" : "5GOAOTDiTK6ypna9pguniQ",
   "name" : "asset",
   "paramType" : {
@@ -39,13 +29,23 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
-  "exportId" : "JTbLPLdpRla0BWgzTJEUnQ",
-  "name" : "assetName",
+  "exportId" : "IIvhyntZSDe586MtIFi2ow",
+  "name" : "name",
   "paramType" : {
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "What is the value for `assetName`?",
+  "question" : "What is the name of your new asset?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "KrIpJZqDTKS7jULD9L5zUw",
+  "name" : "assetType",
+  "paramType" : {
+    "exportId" : "EtKjI9E7TEOI6IFSmN-KKg",
+    "name" : "AssetType"
+  },
+  "question" : "What is the type of this asset?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -69,13 +69,13 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
-  "exportId" : "kLK4L3ixT_iNGPmntlUURQ",
-  "name" : "assetName",
+  "exportId" : "tKEQJn5eThS05LN_KhuB8w",
+  "name" : "domain",
   "paramType" : {
-    "exportId" : "Text",
-    "name" : "Text"
+    "exportId" : "3Z_IeQbeShiewqeJd6FA3A",
+    "name" : "Domain"
   },
-  "question" : "What type do you want a definition for?",
+  "question" : "In what domain would you like to add the asset?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 } ]

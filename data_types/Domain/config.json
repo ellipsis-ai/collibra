@@ -1,0 +1,10 @@
+{
+  "exportId" : "3Z_IeQbeShiewqeJd6FA3A",
+  "name" : "Domain",
+  "forcePrivateResponse" : false,
+  "isDataType" : true,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}
