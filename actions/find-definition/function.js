@@ -4,23 +4,45 @@ const ellipsisApi = new EllipsisApi(ellipsis);
 const CollibraApi = require('collibra-api');
 const collibra = CollibraApi(ellipsis);
 
-collibra.definitionAttributesFor(asset.id).then(attrs => {
-  const definitions = attrs.map(ea => ea.value.trim()).filter(ea => ea.length > 0);
-  const hasDefinition = definitions.length > 0;
-  if (hasDefinition) {
-    ellipsis.success({
-      name: asset.label,
-      link: collibra.linkForAsset(asset.id),
-      hasDefinition: hasDefinition,
-      definitions: definitions
+if (asset.id == "ellipsis-add-new") {
+  addNewAsset();
+} else if (asset.id == "ellipsis-search-again") {
+  searchAgain();
+} else {
+  withChosenAsset();
+}
+
+function addNewAsset() {
+  ellipsisApi.say({ message: "In the future I will let you add new assets"}).then(ellipsis.noResponse);
+}
+
+function searchAgain() {
+  ellipsisApi.say({ message: "OK, try searching again."}).then(res => {
+    ellipsisApi.run({ 
+      actionName: "find-definition"
     });
-  } else {
-    ellipsisApi.say({ message: `${asset.label} doesn't yet have a definition.`}).then(res => {
-      ellipsisApi.run({ 
-        actionName: "maybe-add-definition", 
-        args: [ { name: "assetId", value: asset.id }, { name: "assetName", value: asset.label }] 
+  }).then(ellipsis.noResponse);
+}
+
+function withChosenAsset() {
+  collibra.definitionAttributesFor(asset.id).then(attrs => {
+    const definitions = attrs.map(ea => ea.value.trim()).filter(ea => ea.length > 0);
+    const hasDefinition = definitions.length > 0;
+    if (hasDefinition) {
+      ellipsis.success({
+        name: asset.label,
+        link: collibra.linkForAsset(asset.id),
+        hasDefinition: hasDefinition,
+        definitions: definitions
       });
-    }).then(ellipsis.noResponse);
-  }
-});
+    } else {
+      ellipsisApi.say({ message: `${asset.label} doesn't yet have a definition.`}).then(res => {
+        ellipsisApi.run({ 
+          actionName: "maybe-add-definition", 
+          args: [ { name: "assetId", value: asset.id }, { name: "assetName", value: asset.label }] 
+        });
+      }).then(ellipsis.noResponse);
+    }
+  });
+}
 }

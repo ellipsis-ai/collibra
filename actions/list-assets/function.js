@@ -1,8 +1,8 @@
 function(ellipsis) {
   const CollibraApi = require('collibra-api');
-const apiCall = CollibraApi(ellipsis);
+const api = CollibraApi(ellipsis);
 
-apiCall("assets", { qs: { limit: 10 } }, (err, res, body) => {
+api.apiCall("assets", { qs: { limit: 10 } }, (err, res, body) => {
   if (err) {
     ellipsis.error(err);
   } else if (res.statusCode == 200 ) {
