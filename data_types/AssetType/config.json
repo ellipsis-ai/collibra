@@ -1,0 +1,10 @@
+{
+  "exportId" : "EtKjI9E7TEOI6IFSmN-KKg",
+  "name" : "AssetType",
+  "forcePrivateResponse" : false,
+  "isDataType" : true,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}

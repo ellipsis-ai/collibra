@@ -4,7 +4,7 @@ const collibra = CollibraApi(ellipsis);
 
 collibra.addDefinition(asset.id, definition).then(res => {
   ellipsis.success({
-    link: collibra.linkForAsset(asset.id)
+    link: collibra.linkFor("asset", asset.id)
   });
 });
 }

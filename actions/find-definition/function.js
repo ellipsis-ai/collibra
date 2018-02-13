@@ -13,7 +13,10 @@ if (asset.id == "ellipsis-add-new") {
 }
 
 function addNewAsset() {
-  ellipsisApi.say({ message: "In the future I will let you add new assets"}).then(ellipsis.noResponse);
+  ellipsisApi.run({ 
+    actionName: "add-asset",
+    args: [ { name: "name", value: asset.searchQuery } ]
+  }).then(ellipsis.noResponse);
 }
 
 function searchAgain() {
@@ -31,7 +34,7 @@ function withChosenAsset() {
     if (hasDefinition) {
       ellipsis.success({
         name: asset.label,
-        link: collibra.linkForAsset(asset.id),
+        link: collibra.linkFor("asset", asset.id),
         hasDefinition: hasDefinition,
         definitions: definitions
       });
