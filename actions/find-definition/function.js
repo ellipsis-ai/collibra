@@ -6,8 +6,6 @@ const collibra = CollibraApi(ellipsis);
 
 if (asset.id == "ellipsis-add-new") {
   addNewAsset();
-} else if (asset.id == "ellipsis-search-again") {
-  searchAgain();
 } else {
   withChosenAsset();
 }
@@ -16,14 +14,6 @@ function addNewAsset() {
   ellipsisApi.run({ 
     actionName: "add-asset",
     args: [ { name: "name", value: asset.searchQuery } ]
-  }).then(ellipsis.noResponse);
-}
-
-function searchAgain() {
-  ellipsisApi.say({ message: "OK, try searching again."}).then(res => {
-    ellipsisApi.run({ 
-      actionName: "find-definition"
-    });
   }).then(ellipsis.noResponse);
 }
 

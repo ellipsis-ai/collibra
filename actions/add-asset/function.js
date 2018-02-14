@@ -9,9 +9,10 @@ collibra.addAsset(name, domain, assetType).then(res => {
   const typeLink = collibra.linkFor("assettype", assetType.id);
   const domainLink = collibra.linkFor("domain", domain.id);
   const assetLink = collibra.linkFor("asset", newAssetId);
-  const message = `OK, I added a new asset [${name}](${assetLink})
-- in domain [${domain.label}](${domainLink})
-- of type [${assetType.label}](${typeLink})
+  const message = `
+OK, I added a new asset [${name}](${assetLink})
+> in domain [${domain.label}](${domainLink})
+> of type [${assetType.label}](${typeLink})
 `;
   
   ellipsisApi.say({ message: message }).then(res => {

@@ -3,7 +3,6 @@ function(searchQuery, ellipsis) {
 const api = CollibraApi(ellipsis);
 
 const extraOptions = [
-  { id: "ellipsis-search-again", label: "Search again…"},
   { id: "ellipsis-add-new", label: `Add a new asset named "${searchQuery}"…`, searchQuery: searchQuery }
 ];
 
