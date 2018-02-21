@@ -69,6 +69,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "n1cunQCvRoGPFJPcUzG0JA",
+  "name" : "password",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is your password for this Collibra instance?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "tKEQJn5eThS05LN_KhuB8w",
   "name" : "domain",
   "paramType" : {
@@ -76,6 +86,16 @@
     "name" : "Domain"
   },
   "question" : "In what domain would you like to add the asset?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "wrLzHu0RQNWcEvAhEZqYYg",
+  "name" : "username",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is your username for this Collibra instance?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 } ]

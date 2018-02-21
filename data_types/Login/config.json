@@ -1,18 +1,25 @@
 {
-  "exportId" : "mkHJUDNHQy6E9_1BVcQ_eQ",
-  "name" : "SessionToken",
+  "exportId" : "MvDtMSUhRkK54LUKEgZQxw",
+  "name" : "Login",
   "forcePrivateResponse" : false,
   "isDataType" : true,
   "dataTypeConfig" : {
     "fields" : [ {
-      "name" : "token",
+      "name" : "username",
       "fieldType" : {
         "exportId" : "Text",
         "name" : "Text"
       },
       "isLabel" : false
     }, {
-      "name" : "username",
+      "name" : "password",
+      "fieldType" : {
+        "exportId" : "Text",
+        "name" : "Text"
+      },
+      "isLabel" : false
+    }, {
+      "name" : "ellipsisUserId",
       "fieldType" : {
         "exportId" : "Text",
         "name" : "Text"
