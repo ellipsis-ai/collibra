@@ -1,0 +1,1 @@
+:thumbsup: Your Slack account is associated with the Collibra user `{username}`.
