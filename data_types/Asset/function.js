@@ -6,12 +6,15 @@ const extraOptions = [
   { id: "ellipsis-add-new", label: `Add a new asset named "${searchQuery}"…`, searchQuery: searchQuery }
 ];
 
-api.matchingAssets(searchQuery).then(matches => {
-  ellipsis.success(matches.map(ea => {
-    return {
-      id: ea.id,
-      label: `${ea.name} (${ea.domain.name})`
-    };
-  }).concat(extraOptions));
-});
+api.findAsset(searchQuery).then(asset => {
+  const idMatches = asset ? [asset] : [];
+  api.matchingAssets(searchQuery).then(matches => {
+    ellipsis.success(matches.concat(idMatches).map(ea => {
+      return {
+        id: ea.id,
+        label: `${ea.name} (${ea.domain.name})`
+      };
+    }).concat(extraOptions));
+  });
+})
 }
