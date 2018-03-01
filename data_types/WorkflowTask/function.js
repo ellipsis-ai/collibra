@@ -6,7 +6,7 @@ const api = CollibraApi(ellipsis);
 api.listWorkflowTasks().then(results => {
   ellipsis.success(results.map(ea => {
     const dueString = moment(ea.dueDate).fromNow();
-    const label = `${ea.title} (due ${dueString})`
+    const label = `${ea.description} (due ${dueString})`
     return {
       id: ea.id,
       label: label,
