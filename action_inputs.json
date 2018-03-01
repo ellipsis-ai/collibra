@@ -39,6 +39,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "JejOl-JYRHK81g52yS5yYw",
+  "name" : "task",
+  "paramType" : {
+    "exportId" : "fOF7EstgSEWLkBAWPYZtng",
+    "name" : "WorkflowTask"
+  },
+  "question" : "What is the value for `task`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "KrIpJZqDTKS7jULD9L5zUw",
   "name" : "assetType",
   "paramType" : {
@@ -46,6 +56,16 @@
     "name" : "AssetType"
   },
   "question" : "What is the type of this asset?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "KuzObhCRSpWgT3aal9odmQ",
+  "name" : "comment",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is your comment?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
