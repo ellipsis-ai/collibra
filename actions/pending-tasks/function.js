@@ -4,9 +4,9 @@ const getLogin = require('saved-login');
 const CollibraApi = require('collibra-api');
 const api = CollibraApi(ellipsis);
 
-api.listWorkflowTasks().then(res => {
+api.listWorkflowTasks().then(results => {
   getLogin(ellipsis).then(login => {
-    const tasks = res.results.map(ea => {
+    const tasks = results.map(ea => {
       const link = api.linkFor("asset", ea.businessItem.id) + "#task-id=" + ea.id;
       return {
         id: ea.id,
@@ -17,6 +17,7 @@ api.listWorkflowTasks().then(res => {
       };
     });
     ellipsis.success({
+      isEmpty: tasks.length == 0,
       tasks: tasks,
       username: login.username
     });

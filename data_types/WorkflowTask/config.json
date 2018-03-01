@@ -1,0 +1,10 @@
+{
+  "exportId" : "fOF7EstgSEWLkBAWPYZtng",
+  "name" : "WorkflowTask",
+  "forcePrivateResponse" : false,
+  "isDataType" : true,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}

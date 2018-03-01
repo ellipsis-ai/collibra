@@ -1,0 +1,10 @@
+{
+  "exportId" : "FfttiRA5QHS3_X_tc1WRfg",
+  "name" : "ReviewAction",
+  "forcePrivateResponse" : false,
+  "isDataType" : true,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}

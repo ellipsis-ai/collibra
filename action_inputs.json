@@ -49,6 +49,26 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "Mn9qe7mtT9muWwg9dVeJWA",
+  "name" : "task",
+  "paramType" : {
+    "exportId" : "fOF7EstgSEWLkBAWPYZtng",
+    "name" : "WorkflowTask"
+  },
+  "question" : "Which task?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "QkdV4IE4TM6z-q7cuYSRqQ",
+  "name" : "comment",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is your reason for approving/rejecting?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "YB6H-VKjTxuCuu_oehpR6A",
   "name" : "definition",
   "paramType" : {
@@ -69,6 +89,26 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "fUcy2UfGSK2YPnbu6fHMsg",
+  "name" : "shouldComplete",
+  "paramType" : {
+    "exportId" : "Yes/No",
+    "name" : "Yes/No"
+  },
+  "question" : "Are you ready to mark this task as done?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "ho5azn28QhayQ4-mkmVt_A",
+  "name" : "task",
+  "paramType" : {
+    "exportId" : "fOF7EstgSEWLkBAWPYZtng",
+    "name" : "WorkflowTask"
+  },
+  "question" : "Which task do you want to do?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "n1cunQCvRoGPFJPcUzG0JA",
   "name" : "password",
   "paramType" : {
@@ -86,6 +126,26 @@
     "name" : "Domain"
   },
   "question" : "In what domain would you like to add the asset?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "tsc_CIKARAqyAlQWuWMyBQ",
+  "name" : "action",
+  "paramType" : {
+    "exportId" : "FfttiRA5QHS3_X_tc1WRfg",
+    "name" : "ReviewAction"
+  },
+  "question" : "Approve or reject?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "vo6XM-bSTFGYsYYg8CMnOw",
+  "name" : "task",
+  "paramType" : {
+    "exportId" : "fOF7EstgSEWLkBAWPYZtng",
+    "name" : "WorkflowTask"
+  },
+  "question" : "Which review task do you want to do?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
