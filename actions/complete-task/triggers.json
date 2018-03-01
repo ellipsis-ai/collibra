@@ -1,0 +1,6 @@
+[ {
+  "text" : "do collibra task",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+} ]
