@@ -10,5 +10,4 @@ api.allRoles().then(roles => {
     };
   }));
 });
-
 }

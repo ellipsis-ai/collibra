@@ -35,5 +35,4 @@ function saveLogin() {
   const vars = { login: loginData, filter: { ellipsisUserId: ellipsisUserId } };
   return storageApi.query({ query: mutation, variables: vars });
 }
-
 }

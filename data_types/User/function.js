@@ -10,5 +10,4 @@ api.matchingUsers(searchQuery).then(users => {
     };
   }));
 });
-
 }

@@ -31,5 +31,4 @@ if (task.type == "vote") {
     ellipsis.success(JSON.stringify(res));  
   })
 }
-
 }

@@ -10,5 +10,4 @@ api.allAssetTypes().then(types => {
     };
   }));
 });
-
 }

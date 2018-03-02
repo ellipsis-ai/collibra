@@ -23,5 +23,4 @@ api.listWorkflowTasks().then(results => {
     });
   });
 });
-
 }

@@ -10,5 +10,4 @@ if (shouldContinue) {
 } else {
   ellipsis.success("OK, maybe later then :thumbsup:")
 }
-
 }

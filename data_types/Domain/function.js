@@ -10,5 +10,4 @@ api.allDomains().then(domains => {
     };
   }));
 });
-
 }
