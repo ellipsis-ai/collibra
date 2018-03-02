@@ -17,4 +17,5 @@ api.apiCall("assets", { qs: { limit: 10 } }, (err, res, body) => {
     ellipsis.error(res.statusCode);
   }
 });
+
 }

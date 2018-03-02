@@ -22,4 +22,5 @@ OK, I added a new asset [${name}](${assetLink})
     });
   }).then(ellipsis.noResponse);
 });
+
 }

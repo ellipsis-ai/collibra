@@ -29,6 +29,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "HJ6mPOaKT5S1YGuRKAMZgw",
+  "name" : "role",
+  "paramType" : {
+    "exportId" : "VsHTE2d7SayJMO0pQQ2t1w",
+    "name" : "Role"
+  },
+  "question" : "For which role?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "IIvhyntZSDe586MtIFi2ow",
   "name" : "name",
   "paramType" : {
@@ -109,6 +119,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "djhXi9QVQ4uNdAAHLEyEYA",
+  "name" : "asset",
+  "paramType" : {
+    "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
+    "name" : "Asset"
+  },
+  "question" : "For which asset?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "fUcy2UfGSK2YPnbu6fHMsg",
   "name" : "shouldComplete",
   "paramType" : {
@@ -126,6 +146,16 @@
     "name" : "WorkflowTask"
   },
   "question" : "Which task do you want to do?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "hxWaj7QmRKaAqlmAcGwYgw",
+  "name" : "user",
+  "paramType" : {
+    "exportId" : "ckpchJ8bS_-wo9bfPQFtVw",
+    "name" : "User"
+  },
+  "question" : "Which user should have this role?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
