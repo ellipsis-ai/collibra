@@ -17,4 +17,6 @@ api.findAsset(searchQuery).then(asset => {
     }).concat(extraOptions));
   });
 })
+
+
 }

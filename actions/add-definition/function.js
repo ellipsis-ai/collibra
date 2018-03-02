@@ -7,4 +7,5 @@ collibra.addDefinition(asset.id, definition).then(res => {
     link: collibra.linkFor("asset", asset.id)
   });
 });
+
 }

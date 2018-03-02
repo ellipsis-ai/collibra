@@ -1,0 +1,10 @@
+{
+  "exportId" : "ckpchJ8bS_-wo9bfPQFtVw",
+  "name" : "User",
+  "forcePrivateResponse" : false,
+  "isDataType" : true,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}
