@@ -9,8 +9,7 @@ collibra.startWorkflow(asset.id, workflowDefinition.id).then(res => {
   if (res.success) {
     const message = `OK, I added a started workflow \`${workflowDefinition.label}\``;
     ellipsisApi.say({ message: message }).then(res => {
-      collibra.listWorkflowTasks().then(tasks => {
-        const nextTask = tasks.find(ea => ea.businessItem.id == asset.id);
+      collibra.nextTaskForAsset(asset.id).then(nextTask => {
         if (nextTask) {
           ellipsisApi.say({ message: "Here is the first task:" }).then(res => {
             ellipsisApi.run({
