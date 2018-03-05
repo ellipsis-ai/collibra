@@ -3,6 +3,7 @@ function(asset, workflowDefinition, ellipsis) {
 const collibra = CollibraApi(ellipsis);
 const EllipsisApi = require('ellipsis-api');
 const ellipsisApi = new EllipsisApi(ellipsis);
+const workflowHelpers = require('workflow-helpers')(ellipsis);
 
 collibra.startWorkflow(asset.id, workflowDefinition.id).then(res => {
   if (res.success) {
@@ -24,24 +25,7 @@ collibra.startWorkflow(asset.id, workflowDefinition.id).then(res => {
     });
   } else {
     const msg = `Sorry, I couldn't start this workflow yet.\n\n${res.error}`;
-    const responsibilityRegex = /A user for role '([^']+)' for '([^']+)' was not found/;
-    let match;
-    if (res.status == 400 && res.body && (match = responsibilityRegex.exec(res.body.userMessage))) {
-      collibra.allRoles().then(roles => {
-        const role = roles.find(ea => ea.name == match[1]);
-        ellipsisApi.say({ message: msg }).then(res => {
-          ellipsisApi.run({
-            actionName: "add-responsibility",
-            args: [
-              { name: "asset", value: asset.id },
-              { name: "role", value: role.id }
-            ]
-          }).then(ellipsis.noResponse);
-        });
-      });
-    } else {
-      ellipsis.success(msg);
-    }
+    workflowHelpers.addResponsibilityIfNec(res, msg, asset.id);
   }
   
 });

@@ -1,8 +1,8 @@
 function(task, shouldComplete, ellipsis) {
-  const workflowTask = require('workflow-task')(ellipsis);
+  const workflowHelpers = require('workflow-helpers')(ellipsis);
 
 if (shouldComplete) {
-  workflowTask(task);
+  workflowHelpers.completeTaskAndProceed(task);
 } else {
   ellipsis.success("OK, maybe some other time.")
 }
