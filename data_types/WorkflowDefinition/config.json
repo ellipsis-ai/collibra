@@ -1,0 +1,10 @@
+{
+  "exportId" : "wJ3xsgMETrKUsjLUFVqtVA",
+  "name" : "WorkflowDefinition",
+  "forcePrivateResponse" : false,
+  "isDataType" : true,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}
