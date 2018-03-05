@@ -1,4 +1,4 @@
-function(task, comment, action, ellipsis) {
+function(task, action, comment, ellipsis) {
   const workflowHelpers = require('workflow-helpers')(ellipsis);
 
 const formProperties = {
