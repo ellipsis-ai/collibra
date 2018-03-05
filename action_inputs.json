@@ -205,7 +205,7 @@
     "exportId" : "FfttiRA5QHS3_X_tc1WRfg",
     "name" : "ReviewAction"
   },
-  "question" : "Approve or reject?",
+  "question" : "Do you want to approve or reject this asset?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
