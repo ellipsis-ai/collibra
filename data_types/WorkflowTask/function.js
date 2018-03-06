@@ -13,7 +13,8 @@ api.listWorkflowTasks().then(results => {
       type: ea.type,
       description: ea.description,
       assetId: ea.businessItem.id,
-      formRequired: ea.formRequired.toString()
+      formRequired: ea.formRequired.toString(),
+      key: ea.key
     };
   }));
 });
