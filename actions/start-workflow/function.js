@@ -1,13 +1,13 @@
-function(asset, workflowDefinition, ellipsis) {
+function(asset, ellipsis) {
   const CollibraApi = require('collibra-api');
 const collibra = CollibraApi(ellipsis);
 const EllipsisApi = require('ellipsis-api');
 const ellipsisApi = new EllipsisApi(ellipsis);
 const workflowHelpers = require('workflow-helpers')(ellipsis);
 
-collibra.startWorkflow(asset.id, workflowDefinition.id).then(res => {
+collibra.startAssetApprovalWorkflowFor(asset.id).then(res => {
   if (res.success) {
-    const message = `OK, I added a started workflow \`${workflowDefinition.label}\``;
+    const message = `OK, I started an asset approval workflow for \`${asset.label}\``;
     ellipsisApi.say({ message: message }).then(res => {
       collibra.nextTaskForAsset(asset.id).then(nextTask => {
         if (nextTask) {
