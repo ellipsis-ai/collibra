@@ -16,15 +16,20 @@ if (task.type == "vote") {
       });
     });
   });
+} else if (task.key == "add_related_terms") {
+  collibra.allRelationsForAsset(task.assetId).then(relations => {
+    if (relations.length == 0) {
+      completeSimpleTask("There aren't yet any relations for this asset");
+    } else {
+      const relationTypeIds = new Set(relations.map(ea => ea.type.id));
+      Promise.all(Array.from(relationTypeIds).map(collibra.findRelationType)).then(relationTypes => {
+        const text = relations.map(ea => "- " + relationStringFor(ea, relationTypes)).join("\n");
+        completeSimpleTask(`Current relations:\n${text}`);
+      });
+    }
+  });
 } else if (task.formRequired != "true") {
-  const link = collibra.linkFor("asset", task.assetId) + "#task-id=" + task.id;
-  const msg = `To complete this task, you need to:\n\n${task.description}\n\n${link}`
-  api.say({ message: msg }).then(res => {
-    api.run({
-      actionName: "complete-simple-task",
-      args: [ { name: "task", value: task.id } ]
-    }).then(ellipsis.noResponse);  
-  });     
+  completeSimpleTask();     
 } else if (task.type == "provide") {
   const msg = `To complete this task, you need to:\n\n${task.description}`
   api.say({ message: msg }).then(res => {
@@ -37,6 +42,27 @@ if (task.type == "vote") {
   collibra.formForWorkflowTask(task.id).then(res => {
     ellipsis.success(JSON.stringify(res));  
   })
+}
+
+function relationStringFor(relation, relationTypes) {
+  console.log(JSON.stringify(relationTypes));
+  const relationType = relationTypes.find(ea => ea.id === relation.type.id);
+  return `**${relation.source.name}** ${relationType.role} **${relation.target.name}**`;
+}
+
+function completeSimpleTask(taskSpecificText) {
+  const link = collibra.linkFor("asset", task.assetId) + "#task-id=" + task.id;
+  const msg = `
+To complete this task, you need to ${task.description}${taskSpecificText ? "\n\n" + taskSpecificText : ""}
+
+[More details](${link})
+`
+  return api.say({ message: msg }).then(res => {
+    api.run({
+      actionName: "complete-simple-task",
+      args: [ { name: "task", value: task.id } ]
+    }).then(ellipsis.noResponse);  
+  });
 }
 
 function messageFor(asset, definitions) {

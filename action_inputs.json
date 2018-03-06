@@ -95,7 +95,7 @@
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "What is your reason for approving/rejecting this asset?",
+  "question" : "Why?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -166,16 +166,6 @@
     "name" : "Text"
   },
   "question" : "What is your password for this Collibra instance?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "q3jUR8wJSIq2u-H2sBhuQA",
-  "name" : "workflowDefinition",
-  "paramType" : {
-    "exportId" : "wJ3xsgMETrKUsjLUFVqtVA",
-    "name" : "WorkflowDefinition"
-  },
-  "question" : "Which workflow?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
