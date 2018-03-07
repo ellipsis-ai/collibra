@@ -1,6 +1,6 @@
 function(ellipsis) {
   ellipsis.success([
   { id: "add", label: "Add a relation" },
-  { id: "done", label: "I'm done adding relations. Mark this task as done." }
+  { id: "done", label: "No relations to add right now. Mark this task as done." }
 ]);
 }

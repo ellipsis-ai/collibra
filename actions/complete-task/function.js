@@ -18,11 +18,25 @@ if (task.type == "vote") {
     });
   });
 } else if (task.key == "add_related_terms") {
-  workflowHelpers.relationsTextFor(task.assetId).then(text => {
-    workflowHelpers.completeTaskWith(task, "maybe-add-relations-task", text);
+  collibra.relationTypesWithRole("Related to").then(types => {
+    const relatedToId = types[0] ? types[0].id : null;
+    workflowHelpers.relationsTextFor(task.assetId, relatedToId).then(text => {
+      const args = relatedToId ? [{ name: "relationTypeId", value: relatedToId }] : [];
+      workflowHelpers.completeTaskWith(task, "maybe-add-relations-task", text, args);
+    });
   });
-} else if (task.formRequired != "true") {
-  workflowHelpers.completeSimpleTask(task);     
+} else if (task.key == "add_policies" || task.key == "add_complied_policies") {
+  collibra.relationTypesWithRole("Complies to").then(types => {
+    const compliesToId = types[0] ? types[0].id : null;
+    workflowHelpers.relationsTextFor(task.assetId, compliesToId).then(text => {
+      const args = compliesToId ? [{ name: "relationTypeId", value: compliesToId }] : [];
+      workflowHelpers.completeTaskWith(task, "maybe-add-relations-task", text, args);
+    });
+  });
+} else if (task.key == "address_comments") {
+  workflowHelpers.commentsTextFor(task).then(commentsText => {
+    workflowHelpers.completeSimpleTask(task, commentsText);
+  });
 } else if (task.type == "provide") {
   const msg = `To complete this task, you need to:\n\n${task.description}`
   api.say({ message: msg }).then(res => {
