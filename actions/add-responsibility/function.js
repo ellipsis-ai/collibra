@@ -15,7 +15,10 @@ collibra.addResponsibility(asset, role, user).then(res => {
         }).then(ellipsis.noResponse);
       });
     } else {
-        ellipsis.success();
+      ellipsisApi.run({
+        actionName: "start-workflow",
+        args: [ { name: "asset", value: asset.id }]
+      }).then(ellipsis.noResponse);
     }
   });
 });
