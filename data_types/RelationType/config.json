@@ -1,0 +1,10 @@
+{
+  "exportId" : "4hIrP7kpTpaFhQ5JeJX9Ng",
+  "name" : "RelationType",
+  "forcePrivateResponse" : false,
+  "isDataType" : true,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}

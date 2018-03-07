@@ -1,0 +1,10 @@
+{
+  "exportId" : "yk0UZDyFQSSdaXuArYtAbQ",
+  "name" : "AddRelationAction",
+  "forcePrivateResponse" : false,
+  "isDataType" : true,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}

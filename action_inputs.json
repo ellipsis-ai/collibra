@@ -1,4 +1,24 @@
 [ {
+  "exportId" : "-8uRJkzdT3Cj7cXR1qKfeA",
+  "name" : "task",
+  "paramType" : {
+    "exportId" : "fOF7EstgSEWLkBAWPYZtng",
+    "name" : "WorkflowTask"
+  },
+  "question" : "Which task?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "0UezNVfCS9iuDyqLFFbobQ",
+  "name" : "relationType",
+  "paramType" : {
+    "exportId" : "4hIrP7kpTpaFhQ5JeJX9Ng",
+    "name" : "RelationType"
+  },
+  "question" : "What type of relation?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "5GOAOTDiTK6ypna9pguniQ",
   "name" : "asset",
   "paramType" : {
@@ -6,6 +26,16 @@
     "name" : "Asset"
   },
   "question" : "For which asset do you want to find a definition? Enter a search query:",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "BLdl1zJiSCyeMZ6cE7ztbQ",
+  "name" : "action",
+  "paramType" : {
+    "exportId" : "yk0UZDyFQSSdaXuArYtAbQ",
+    "name" : "AddRelationAction"
+  },
+  "question" : "How do you want to proceed?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -109,6 +139,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "YIjKa5bZR366kOrDZNugmQ",
+  "name" : "sourceAsset",
+  "paramType" : {
+    "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
+    "name" : "Asset"
+  },
+  "question" : "For which source asset?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "Ybk7iiv2SCy1ETQc9nbThw",
   "name" : "shouldContinue",
   "paramType" : {
@@ -159,6 +199,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "hzDdVb9IQAKytQzQrR9oHw",
+  "name" : "targetAsset",
+  "paramType" : {
+    "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
+    "name" : "Asset"
+  },
+  "question" : "For which target asset?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "n1cunQCvRoGPFJPcUzG0JA",
   "name" : "password",
   "paramType" : {
@@ -196,6 +246,16 @@
     "name" : "ReviewAction"
   },
   "question" : "Do you want to approve or reject this asset?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "ujRQVUnGSCKibxRO9uLolg",
+  "name" : "task",
+  "paramType" : {
+    "exportId" : "fOF7EstgSEWLkBAWPYZtng",
+    "name" : "WorkflowTask"
+  },
+  "question" : "For which task?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
