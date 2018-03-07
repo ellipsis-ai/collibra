@@ -37,14 +37,23 @@ if (task.type == "vote") {
   workflowHelpers.commentsTextFor(task).then(commentsText => {
     workflowHelpers.completeSimpleTask(task, commentsText);
   });
-} else if (task.type == "provide") {
-  const msg = `To complete this task, you need to:\n\n${task.description}`
-  api.say({ message: msg }).then(res => {
-    api.run({
-      actionName: "complete-comment-task",
-      args: [ { name: "task", value: task.id } ]
-    }).then(ellipsis.noResponse);  
-  });     
+} else if (task.key == "correct_description") {
+  const link = collibra.linkFor("asset", task.assetId) + "#task-id=" + task.id;
+  const text = `See [the asset](${link}) for more details.`;
+  workflowHelpers.completeSimpleTask(task, text);
+} else if (task.key == "provide_comment") {
+  collibra.relationTypesWithRole("Complies to").then(types => {
+    const compliesToId = types[0] ? types[0].id : null;
+    workflowHelpers.relationsTextFor(task.assetId, compliesToId).then(text => {
+      const msg = `To complete this task, you need to:\n\n${task.description}\n\n${text}`;
+      api.say({ message: msg }).then(res => {
+        api.run({
+          actionName: "complete-comment-task",
+          args: [ { name: "task", value: task.id } ]
+        }).then(ellipsis.noResponse);  
+      });      
+    });
+  });
 } else {
   collibra.formForWorkflowTask(task.id).then(res => {
     ellipsis.success(JSON.stringify(res));  
