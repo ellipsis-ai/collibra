@@ -159,6 +159,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "a23P3qkLTpSoKPACnby86A",
+  "name" : "relationTypeId",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `relationTypeId`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "djhXi9QVQ4uNdAAHLEyEYA",
   "name" : "asset",
   "paramType" : {
