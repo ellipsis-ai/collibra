@@ -8,9 +8,11 @@ collibra.listWorkflowTasks().then(results => {
   if (results.length == 0) {
     ellipsis.success("You don't have any pending tasks right now. :thumbsup:\n\nCheck back later!");
   } else {
-    ellipsisApi.run({
-      actionName: "complete-task"
-    }).then(ellipsis.noResponse);
+    ellipsisApi.say({ message: "You have some Collibra tasks in your queue…"}).then(res => {
+      ellipsisApi.run({
+        actionName: "complete-task"
+      }).then(ellipsis.noResponse);
+    });
   }
 });
 }

@@ -7,9 +7,8 @@ const workflowHelpers = require('workflow-helpers')(ellipsis);
 
 if (task.type == "vote") {
   collibra.findAsset(task.assetId).then(asset => {
-    collibra.definitionAttributesFor(asset.id).then(attrs => {
-      const definitions = attrs.map(ea => ea.value.toString().trim()).filter(ea => ea.length > 0);
-      api.say({ message: messageFor(asset, definitions) }).then(res => {
+    messageFor(task.assetId).then(msg => {
+      api.say({ message: msg }).then(res => {
         api.run({
           actionName: "complete-review-task",
           args: [ { name: "task", value: task.id } ]
@@ -38,9 +37,9 @@ if (task.type == "vote") {
     workflowHelpers.completeSimpleTask(task, commentsText);
   });
 } else if (task.key == "correct_description") {
-  const link = collibra.linkFor("asset", task.assetId) + "#task-id=" + task.id;
-  const text = `See [the asset](${link}) for more details.`;
-  workflowHelpers.completeSimpleTask(task, text);
+  messageFor(task.assetId).then(msg => {
+    workflowHelpers.completeSimpleTask(task, msg);
+  });
 } else if (task.key == "provide_comment") {
   collibra.relationTypesWithRole("Complies to").then(types => {
     const compliesToId = types[0] ? types[0].id : null;
@@ -60,13 +59,20 @@ if (task.type == "vote") {
   })
 }
 
-function messageFor(asset, definitions) {
-  const link = collibra.linkFor("asset", asset.id);      
-  if (definitions.length > 0) {
-    const definitionsText = definitions.map(ea => "> " + ea).join("\n");
-    return `The asset [${asset.name}](${link}) has definitions:\n${definitionsText}`;
-  } else {
-    return `The asset [${asset.name}](${link}) doesn't yet have any definitions`;
-  }
+function messageFor(assetId) {
+  return new Promise((resolve, reject) => {
+    collibra.findAsset(assetId).then(asset => {
+      collibra.definitionAttributesFor(asset.id).then(attrs => {
+        const definitions = (attrs.map(ea => ea.value.toString().trim()).filter(ea => ea.length > 0));
+        const link = collibra.linkFor("asset", asset.id);      
+        if (definitions.length > 0) {
+          const definitionsText = definitions.map(ea => "> " + ea).join("\n");
+          resolve(`The asset [${asset.name}](${link}) has definitions:\n${definitionsText}`);
+        } else {
+          resolve(`The asset [${asset.name}](${link}) doesn't yet have any definitions`);
+        }
+      });
+    });
+  });
 }
 }
