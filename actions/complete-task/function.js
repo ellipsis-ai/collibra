@@ -45,7 +45,7 @@ workflowHelpers.markHasRunForTask(task.id).then(res => {
     collibra.relationTypesWithRole("Complies to").then(types => {
       const compliesToId = types[0] ? types[0].id : null;
       workflowHelpers.relationsTextFor(task.assetId, compliesToId).then(text => {
-        const msg = `To complete this task, you need to:\n\n${task.description}\n\n${text}`;
+        const msg = `Task: **${task.description}**\n\n${text}`;
         api.say({ message: msg }).then(res => {
           api.run({
             actionName: "complete-comment-task",
