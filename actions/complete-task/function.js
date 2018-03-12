@@ -9,12 +9,8 @@ workflowHelpers.markHasRunForTask(task.id).then(res => {
   if (task.type == "vote") {
     collibra.findAsset(task.assetId).then(asset => {
       messageFor(task.assetId).then(msg => {
-        api.say({ message: msg }).then(res => {
-          api.run({
-            actionName: "complete-review-task",
-            args: [ { name: "task", value: task.id } ]
-          }).then(ellipsis.noResponse);
-        });
+        const args = [ { name: "task", value: task.id } ];
+        workflowHelpers.completeTaskWith(task, "complete-review-task", msg, args);
       });
     });
   } else if (task.key == "add_related_terms") {
@@ -45,13 +41,8 @@ workflowHelpers.markHasRunForTask(task.id).then(res => {
     collibra.relationTypesWithRole("Complies to").then(types => {
       const compliesToId = types[0] ? types[0].id : null;
       workflowHelpers.relationsTextFor(task.assetId, compliesToId).then(text => {
-        const msg = `Task: **${task.description}**\n\n${text}`;
-        api.say({ message: msg }).then(res => {
-          api.run({
-            actionName: "complete-comment-task",
-            args: [ { name: "task", value: task.id } ]
-          }).then(ellipsis.noResponse);  
-        });      
+        const args = [ { name: "task", value: task.id } ];
+        workflowHelpers.completeTaskWith(task, "complete-comment-task", text, args);   
       });
     });
   } else {
@@ -74,7 +65,7 @@ function messageFor(assetId) {
         } else {
           text = `The asset [${asset.name}](${link}) doesn't yet have any definitions`;
         }
-        resolve(`Task: **${task.description}**\n\n${text}`);
+        resolve(text);
       });
     });
   });
