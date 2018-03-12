@@ -1,0 +1,24 @@
+{
+  "exportId" : "Auroe8EyQaaxp_qm0Gzvqw",
+  "name" : "TaskStarted",
+  "forcePrivateResponse" : false,
+  "isDataType" : true,
+  "dataTypeConfig" : {
+    "fields" : [ {
+      "name" : "taskId",
+      "fieldType" : {
+        "exportId" : "Text",
+        "name" : "Text"
+      },
+      "isLabel" : false
+    }, {
+      "name" : "userId",
+      "fieldType" : {
+        "exportId" : "Text",
+        "name" : "Text"
+      },
+      "isLabel" : false
+    } ],
+    "usesCode" : false
+  }
+}
