@@ -69,6 +69,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "EOyE0WntTWmho4MDvIJeMg",
+  "name" : "assetId",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "For which asset?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "HJ6mPOaKT5S1YGuRKAMZgw",
   "name" : "role",
   "paramType" : {
@@ -105,7 +115,7 @@
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "What should the updated definition be? Type `add: <new content>` to append or just `no change` to leave it as-is.",
+  "question" : "What should the updated definition be? You can type `add: <new content>` to append, `no change` to leave it as-is, or just type in a replacement definition.",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -225,7 +235,7 @@
     "exportId" : "ckpchJ8bS_-wo9bfPQFtVw",
     "name" : "User"
   },
-  "question" : "Which user should have this role?",
+  "question" : "Who should have this role? Search for the user by name:",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -236,6 +246,16 @@
     "name" : "Asset"
   },
   "question" : "I need the target asset of this relation. Enter a search query:",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "kIy3rmT5QBGc3lr00EnL7w",
+  "name" : "shouldStart",
+  "paramType" : {
+    "exportId" : "Yes/No",
+    "name" : "Yes/No"
+  },
+  "question" : "Do you want to start an approval process for this asset now?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
