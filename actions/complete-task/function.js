@@ -34,9 +34,13 @@ workflowHelpers.markHasRunForTask(task.id).then(res => {
       workflowHelpers.completeSimpleTask(task, commentsText);
     });
   } else if (task.key == "correct_description") {
-    messageFor(task.assetId).then(msg => {
-      workflowHelpers.completeSimpleTask(task, msg);
-    });
+    workflowHelpers.commentsTextFor(task).then(commentsText => {
+      messageFor(task.assetId).then(msg => {
+        const text = `${msg}\n\n${commentsText}`;
+        const args = [ { name: "task", value: task.id } ];
+        workflowHelpers.completeTaskWith(task, "correct-description-task", text, args);  
+      });
+    })
   } else if (task.key == "provide_comment") {
     collibra.relationTypesWithRole("Complies to").then(types => {
       const compliesToId = types[0] ? types[0].id : null;
