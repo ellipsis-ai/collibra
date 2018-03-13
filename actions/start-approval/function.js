@@ -7,10 +7,11 @@ const workflowHelpers = require('workflow-helpers')(ellipsis);
 
 collibra.startAssetApprovalWorkflowFor(asset.id).then(res => {
   if (res.success) {
-    const message = `OK, I started an asset approval workflow for \`${asset.label}\``;
+    const message = `OK, I started an asset approval workflow for \`${asset.label}\`. `;
+    const participantsMsg = "Everyone involved will be prompted for input as needed."
     collibra.nextTaskForAsset(asset.id).then(nextTask => {
       if (nextTask) {
-        ellipsisApi.say({ message: message }).then(res => {
+        ellipsisApi.say({ message: message + participantsMsg }).then(res => {
           ellipsisApi.say({ message: "Here is the first task:" }).then(res => {
             ellipsisApi.run({
               actionName: "complete-task",

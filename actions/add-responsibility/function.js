@@ -16,7 +16,7 @@ collibra.addResponsibility(asset, role, user).then(res => {
       });
     } else {
       ellipsisApi.run({
-        actionName: "start-workflow",
+        actionName: "start-approval",
         args: [ { name: "asset", value: asset.id }]
       }).then(ellipsis.noResponse);
     }

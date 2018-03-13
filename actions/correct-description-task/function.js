@@ -16,7 +16,7 @@ function processDefinition() {
       if (match) {
         collibra.definitionAttributesFor(task.assetId).then(attrs => {
           const definitions = (attrs.map(ea => ea.value.toString().trim()).filter(ea => ea.length > 0));
-          const definitionToUse = `${definitions[0]} ${match[1]}`;
+          const definitionToUse = `${definitions[0] ? definitions[0]+" " : ""}${match[1]}`;
           collibra.updateDefinition(task.assetId, definitionToUse).then(res => {
             resolve(definitionToUse);
           });
