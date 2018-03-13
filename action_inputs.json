@@ -29,6 +29,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "5fsKa1mAQxSTiS406gpHkA",
+  "name" : "task",
+  "paramType" : {
+    "exportId" : "fOF7EstgSEWLkBAWPYZtng",
+    "name" : "WorkflowTask"
+  },
+  "question" : "For which task?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "BLdl1zJiSCyeMZ6cE7ztbQ",
   "name" : "action",
   "paramType" : {
@@ -86,6 +96,16 @@
     "name" : "WorkflowTask"
   },
   "question" : "What is the value for `task`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "KVTGu6VwS9GrqDbvpLC3UA",
+  "name" : "newDefinition",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What should the updated definition be? Type `add: <new content>` to append or just `no change` to leave it as-is.",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
