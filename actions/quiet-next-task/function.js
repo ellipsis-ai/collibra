@@ -15,7 +15,7 @@ collibra.listWorkflowTasks().then(results => {
       if (hasRun) {
         ellipsis.noResponse();
       } else {
-        ellipsisApi.say({ message: "You have a Collibra task in your queue…"}).then(res => {
+        ellipsisApi.say({ message: ":pick: You have a Collibra task in your queue…"}).then(res => {
           ellipsisApi.run({
             actionName: "complete-task",
             args: [{ name: "task", value: taskId }]
