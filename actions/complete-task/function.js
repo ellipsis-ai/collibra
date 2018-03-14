@@ -9,8 +9,7 @@ workflowHelpers.markHasRunForTask(task.id).then(res => {
   if (task.type == "vote") {
     collibra.findAsset(task.assetId).then(asset => {
       messageFor(task.assetId).then(msg => {
-        const args = [ { name: "task", value: task.id } ];
-        workflowHelpers.completeTaskWith(task, "complete-review-task", msg, args);
+        workflowHelpers.completeTaskWith(task, "complete-review-task", msg);
       });
     });
   } else if (task.key == "add_related_terms") {
@@ -37,16 +36,14 @@ workflowHelpers.markHasRunForTask(task.id).then(res => {
     workflowHelpers.commentsTextFor(task).then(commentsText => {
       messageFor(task.assetId).then(msg => {
         const text = `${msg}\n\n${commentsText}`;
-        const args = [ { name: "task", value: task.id } ];
-        workflowHelpers.completeTaskWith(task, "correct-description-task", text, args);  
+        workflowHelpers.completeTaskWith(task, "correct-description-task", text);  
       });
     })
   } else if (task.key == "provide_comment") {
     collibra.relationTypesWithRole("Complies to").then(types => {
       const compliesToId = types[0] ? types[0].id : null;
       workflowHelpers.relationsTextFor(task.assetId, compliesToId).then(text => {
-        const args = [ { name: "task", value: task.id } ];
-        workflowHelpers.completeTaskWith(task, "complete-comment-task", text, args);   
+        workflowHelpers.completeTaskWith(task, "complete-comment-task", text);   
       });
     });
   } else {
