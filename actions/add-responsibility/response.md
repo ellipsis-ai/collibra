@@ -1,1 +1,1 @@
-OK, I made {user.label} responsible as {role.label} for {asset.label}.
+{successResult}

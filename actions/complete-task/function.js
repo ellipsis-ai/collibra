@@ -1,7 +1,5 @@
 function(task, ellipsis) {
-  const EllipsisApi = require('ellipsis-api');
-const api = new EllipsisApi(ellipsis);
-const CollibraApi = require('collibra-api');
+  const CollibraApi = require('collibra-api');
 const collibra = CollibraApi(ellipsis);
 const workflowHelpers = require('workflow-helpers')(ellipsis);
 
@@ -48,7 +46,16 @@ workflowHelpers.markHasRunForTask(task.id).then(res => {
     });
   } else {
     collibra.formForWorkflowTask(task.id).then(res => {
-      ellipsis.success(JSON.stringify(res));  
+      const dontKnowResponse = `
+Sorry, I don't yet know how to deal with tasks of type \`{task.type}\`.
+
+Key: ${task.key}
+Description: ${task.description}
+
+Task form data:
+${JSON.stringify(res)}
+`;
+      ellipsis.success(dontKnowResponse);  
     })
   }
 });

@@ -1,7 +1,5 @@
 function(asset, ellipsis) {
-  const EllipsisApi = require('ellipsis-api');
-const ellipsisApi = new EllipsisApi(ellipsis);
-const CollibraApi = require('collibra-api');
+  const CollibraApi = require('collibra-api');
 const collibra = CollibraApi(ellipsis);
 
 if (asset.id == "ellipsis-add-new") {
@@ -11,31 +9,32 @@ if (asset.id == "ellipsis-add-new") {
 }
 
 function addNewAsset() {
-  ellipsisApi.run({ 
-    actionName: "add-asset",
-    args: [ { name: "name", value: asset.searchQuery } ]
-  }).then(ellipsis.noResponse);
+  ellipsis.success({ isAddingNew: true }, {
+    next: {
+      actionName: "add-asset",
+      args: [ { name: "name", value: asset.searchQuery } ]
+    }
+  });
 }
 
 function withChosenAsset() {
   collibra.definitionAttributesFor(asset.id).then(attrs => {
     const definitions = attrs.map(ea => ea.value.toString().trim()).filter(ea => ea.length > 0);
     const hasDefinition = definitions.length > 0;
-    if (hasDefinition) {
-      ellipsis.success({
-        name: asset.label,
-        link: collibra.linkFor("asset", asset.id),
-        hasDefinition: hasDefinition,
-        definitions: definitions
-      });
-    } else {
-      ellipsisApi.say({ message: `${asset.label} doesn't yet have a definition.`}).then(res => {
-        ellipsisApi.run({ 
+    const successResult = {
+      isAddingNew: false,
+      name: asset.label,
+      link: collibra.linkFor("asset", asset.id),
+      hasDefinition: hasDefinition,
+      definitions: definitions
+    };
+    const options = hasDefinition ? {} : {
+      next: {
           actionName: "maybe-add-definition", 
-          args: [ { name: "assetId", value: asset.id }, { name: "assetName", value: asset.label }] 
-        });
-      }).then(ellipsis.noResponse);
-    }
+          args: [ { name: "assetId", value: asset.id }, { name: "assetName", value: asset.label }]
+        }
+      };
+    ellipsis.success(successResult, options);
   });
 }
 }

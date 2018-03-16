@@ -1,8 +1,6 @@
 function(name, domain, assetType, ellipsis) {
   const CollibraApi = require('collibra-api');
 const collibra = CollibraApi(ellipsis);
-const EllipsisApi = require('ellipsis-api');
-const ellipsisApi = new EllipsisApi(ellipsis);
 
 collibra.addAsset(name, domain, assetType).then(res => {
   const newAssetId = res.id;
@@ -15,11 +13,11 @@ OK, I added a new asset [${name}](${assetLink})
 > of type [${assetType.label}](${typeLink})
 `;
   
-  ellipsisApi.say({ message: message }).then(res => {
-    ellipsisApi.run({
+  ellipsis.success(message, {
+    next: {
       actionName: "maybe-add-definition",
       args: [ { name: "assetId", value: newAssetId } ]
-    });
-  }).then(ellipsis.noResponse);
+    }
+  });
 });
 }
