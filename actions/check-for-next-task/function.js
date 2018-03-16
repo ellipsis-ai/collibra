@@ -1,7 +1,5 @@
 function(ellipsis) {
-  const EllipsisApi = require('ellipsis-api');
-const ellipsisApi = new EllipsisApi(ellipsis);
-const CollibraApi = require('collibra-api');
+  const CollibraApi = require('collibra-api');
 const collibra = CollibraApi(ellipsis);
 const workflowHelpers = require('workflow-helpers')(ellipsis);
 const userId = ellipsis.userInfo ? ellipsis.userInfo.ellipsisUserId : null;
@@ -15,11 +13,11 @@ collibra.listWorkflowTasks().then(results => {
       if (hasRun) {
         ellipsis.noResponse();
       } else {
-        ellipsisApi.say({ message: ":pick: You have a Collibra task in your queue…"}).then(res => {
-          ellipsisApi.run({
+        ellipsis.success(":pick: You have a Collibra task in your queue…", {
+          next: {
             actionName: "complete-task",
             args: [{ name: "task", value: taskId }]
-          }).then(ellipsis.noResponse);
+          }
         });
       }
     });
