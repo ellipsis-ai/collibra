@@ -3,13 +3,15 @@ function(asset, definition, ellipsis) {
 const collibra = CollibraApi(ellipsis);
 
 collibra.addDefinition(asset.id, definition).then(res => {
-  const link = collibra.linkFor("asset", asset.id);
-  const msg = `OK, I set the definition of [${asset.label}](${link}) to be:\n> ${definition}`;
-  ellipsis.success(msg, {
-    next: {
-      actionName: "maybe-start-approval",
-      args: [{ name: "assetId", value: asset.id }]
-    }
+  const successResult = {
+    link: collibra.linkFor("asset", asset.id)
+  };
+  ellipsis.success(successResult, {
+    choices: [{
+      label: "Start approval process now",
+      actionName: "start-approval",
+      args: [{ name: "asset", value: asset.id }]
+    }]
   });
 });
 }

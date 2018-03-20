@@ -4,20 +4,18 @@ const collibra = CollibraApi(ellipsis);
 
 collibra.addAsset(name, domain, assetType).then(res => {
   const newAssetId = res.id;
-  const typeLink = collibra.linkFor("assettype", assetType.id);
-  const domainLink = collibra.linkFor("domain", domain.id);
-  const assetLink = collibra.linkFor("asset", newAssetId);
-  const message = `
-OK, I added a new asset [${name}](${assetLink})
-> in domain [${domain.label}](${domainLink})
-> of type [${assetType.label}](${typeLink})
-`;
+  const successResult = {
+    assetLink: collibra.linkFor("asset", newAssetId),
+    domainLink: collibra.linkFor("domain", domain.id),
+    typeLink: collibra.linkFor("assettype", assetType.id)
+  };
   
-  ellipsis.success(message, {
-    next: {
-      actionName: "maybe-add-definition",
-      args: [ { name: "assetId", value: newAssetId } ]
-    }
+  ellipsis.success(successResult, {
+    choices: [{ 
+      label: "Add a definition now", 
+      actionName: "add-definition", 
+      args: [{ name: "asset", value: newAssetId }]
+    }]
   });
 });
 }
