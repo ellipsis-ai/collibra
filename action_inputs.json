@@ -39,6 +39,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "AdENnxE2RIC2J905ZCooMQ",
+  "name" : "asset",
+  "paramType" : {
+    "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
+    "name" : "Asset"
+  },
+  "question" : "For which asset?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "BLdl1zJiSCyeMZ6cE7ztbQ",
   "name" : "action",
   "paramType" : {
@@ -49,16 +59,6 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
-  "exportId" : "CWXJctn7SlWspoxBFVbsVQ",
-  "name" : "assetId",
-  "paramType" : {
-    "exportId" : "Text",
-    "name" : "Text"
-  },
-  "question" : "What is the value for `assetId`?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
   "exportId" : "CipPxyNIS1CZIX_HTk2Bpg",
   "name" : "asset",
   "paramType" : {
@@ -66,16 +66,6 @@
     "name" : "Asset"
   },
   "question" : "Which asset do you want to define?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "EOyE0WntTWmho4MDvIJeMg",
-  "name" : "assetId",
-  "paramType" : {
-    "exportId" : "Text",
-    "name" : "Text"
-  },
-  "question" : "For which asset?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -179,16 +169,6 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
-  "exportId" : "Ybk7iiv2SCy1ETQc9nbThw",
-  "name" : "shouldContinue",
-  "paramType" : {
-    "exportId" : "Yes/No",
-    "name" : "Yes/No"
-  },
-  "question" : "Do you want to add a definition now?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
   "exportId" : "a23P3qkLTpSoKPACnby86A",
   "name" : "relationTypeId",
   "paramType" : {
@@ -246,16 +226,6 @@
     "name" : "Asset"
   },
   "question" : "I need the target asset of this relation. Enter a search query:",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "kIy3rmT5QBGc3lr00EnL7w",
-  "name" : "shouldStart",
-  "paramType" : {
-    "exportId" : "Yes/No",
-    "name" : "Yes/No"
-  },
-  "question" : "Do you want to start an approval process for this asset now?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
