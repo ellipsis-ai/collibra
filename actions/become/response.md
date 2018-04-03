@@ -1,0 +1,1 @@
+OK, you are now {username} in Collibra!
