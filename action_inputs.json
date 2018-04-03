@@ -179,6 +179,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "ct9qjkuyRKWEVlMTICFXng",
+  "name" : "username",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "Become who?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "djhXi9QVQ4uNdAAHLEyEYA",
   "name" : "asset",
   "paramType" : {
