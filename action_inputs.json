@@ -23,7 +23,7 @@
   "name" : "asset",
   "paramType" : {
     "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
-    "name" : "Asset"
+    "name" : "AddableAsset"
   },
   "question" : "For which asset do you want to find a definition? Enter a search query:",
   "isSavedForTeam" : false,
@@ -42,8 +42,8 @@
   "exportId" : "AdENnxE2RIC2J905ZCooMQ",
   "name" : "asset",
   "paramType" : {
-    "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
-    "name" : "Asset"
+    "exportId" : "DkBIv7E5RI21VHDFKU5CbA",
+    "name" : "NonAddableAsset"
   },
   "question" : "For which asset?",
   "isSavedForTeam" : false,
@@ -62,8 +62,8 @@
   "exportId" : "CipPxyNIS1CZIX_HTk2Bpg",
   "name" : "asset",
   "paramType" : {
-    "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
-    "name" : "Asset"
+    "exportId" : "DkBIv7E5RI21VHDFKU5CbA",
+    "name" : "NonAddableAsset"
   },
   "question" : "Which asset do you want to define?",
   "isSavedForTeam" : false,
@@ -162,8 +162,8 @@
   "exportId" : "YIjKa5bZR366kOrDZNugmQ",
   "name" : "sourceAsset",
   "paramType" : {
-    "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
-    "name" : "Asset"
+    "exportId" : "DkBIv7E5RI21VHDFKU5CbA",
+    "name" : "NonAddableAsset"
   },
   "question" : "I need the source asset of this relation. Enter a search query:",
   "isSavedForTeam" : false,
@@ -192,8 +192,8 @@
   "exportId" : "djhXi9QVQ4uNdAAHLEyEYA",
   "name" : "asset",
   "paramType" : {
-    "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
-    "name" : "Asset"
+    "exportId" : "DkBIv7E5RI21VHDFKU5CbA",
+    "name" : "NonAddableAsset"
   },
   "question" : "For which asset?",
   "isSavedForTeam" : false,
@@ -233,7 +233,7 @@
   "name" : "targetAsset",
   "paramType" : {
     "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
-    "name" : "Asset"
+    "name" : "AddableAsset"
   },
   "question" : "I need the target asset of this relation. Enter a search query:",
   "isSavedForTeam" : false,
@@ -252,8 +252,8 @@
   "exportId" : "qdiFg3nWShKNs-E-KAhv5A",
   "name" : "asset",
   "paramType" : {
-    "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
-    "name" : "Asset"
+    "exportId" : "DkBIv7E5RI21VHDFKU5CbA",
+    "name" : "NonAddableAsset"
   },
   "question" : "For which asset?",
   "isSavedForTeam" : false,
