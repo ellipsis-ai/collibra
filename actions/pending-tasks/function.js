@@ -1,6 +1,6 @@
 function(ellipsis) {
   const moment = require('moment');
-const getLogin = require('saved-login');
+const getLogin = require('saved-login').getLoginForCurrentUser;
 const CollibraApi = require('collibra-api');
 const api = CollibraApi(ellipsis);
 
