@@ -1,6 +1,6 @@
 {
   "exportId" : "O6IG1xWeQ5qHBW7IvLYYOQ",
   "name" : "login",
-  "forcePrivateResponse" : false,
+  "forcePrivateResponse" : true,
   "isDataType" : false
 }
