@@ -7,6 +7,8 @@ SavedLogin.getLoginForUsername(ellipsis, username).then(login => {
   getSessionToken(ellipsis, username, password).
     then(res => SavedLogin.saveLogin(ellipsis, username, password)).
     then(ellipsis.success).
-    catch(err => ellipsis.error(`Unable to login to \`${username}\` with that password`));
+    catch(err => {
+      throw new ellipsis.Error(`Unable to login to \`${username}\` with that password`, { userMessage: `An error occurred while trying to become **${username}**.` })
+    });
 });
 }
