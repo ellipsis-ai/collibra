@@ -6,7 +6,11 @@ const userId = ellipsis.userInfo ? ellipsis.userInfo.ellipsisUserId : null;
 
 collibra.listWorkflowTasks().then(results => {
   if (results.length == 0) {
-    ellipsis.noResponse();
+    if (ellipsis.event.originalEventType === "scheduled") {
+      ellipsis.noResponse();
+    } else {
+      ellipsis.success("You have no tasks in your queue at the moment :thumbsup:")
+    }
   } else {
     const taskId = results[0].id;
     workflowHelpers.hasRunForTask(taskId).then(hasRun => {
