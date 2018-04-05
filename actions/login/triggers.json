@@ -8,9 +8,4 @@
   "requiresMention" : true,
   "isRegex" : false,
   "caseSensitive" : false
-}, {
-  "text" : "login as {username}",
-  "requiresMention" : true,
-  "isRegex" : false,
-  "caseSensitive" : false
 } ]
