@@ -13,11 +13,6 @@ collibra.addDefinition(asset.id, definition).then(res => {
         label: "Start simple approval process",
         actionName: "start-simple-approval",
         args: args      
-      },
-      {
-        label: "Start long approval process",
-        actionName: "start-approval",
-        args: args
       }
     ]
   });
