@@ -9,10 +9,14 @@ if (asset.id == "ellipsis-add-new") {
 }
 
 function addNewAsset() {
+  const defaultDomain = ellipsis.env.COLLIBRA_RESTRICT_TO_DOMAIN_ID;
   ellipsis.success({ isAddingNew: true }, {
     next: {
       actionName: "add-asset",
-      args: [ { name: "name", value: asset.searchQuery } ]
+      args: [ 
+        { name: "name", value: asset.searchQuery },
+        { name: "domain", value: defaultDomain }
+      ]
     }
   });
 }

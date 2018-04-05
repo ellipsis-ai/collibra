@@ -266,7 +266,7 @@
     "name" : "Domain"
   },
   "question" : "In what domain would you like to add the asset?",
-  "isSavedForTeam" : true,
+  "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
   "exportId" : "tsc_CIKARAqyAlQWuWMyBQ",
