@@ -6,21 +6,27 @@ const api = CollibraApi(ellipsis);
 
 api.listWorkflowTasks().then(results => {
   getLogin(ellipsis).then(login => {
-    const tasks = results.map(ea => {
-      const link = api.linkFor("asset", ea.businessItem.id) + "#task-id=" + ea.id;
-      return {
-        id: ea.id,
-        title: ea.title,
-        description: ea.description,
-        dueDate: moment(ea.dueDate).fromNow(),
-        link: link
-      };
-    });
-    ellipsis.success({
-      isEmpty: tasks.length == 0,
-      tasks: tasks,
-      username: login.username
+    Promise.all(results.map(ea => dataForTask(ea))).then(tasks => {
+      ellipsis.success({
+        isEmpty: tasks.length == 0,
+        tasks: tasks,
+        username: login.username
+      });
     });
   });
 });
+
+function dataForTask(task) {
+  return api.findAsset(task.businessItem.id).then(asset => {
+    const link = api.linkFor("asset", task.businessItem.id) + "#task-id=" + task.id;
+    return {
+      id: task.id,
+      title: task.title,
+      description: task.description,
+      dueDate: moment(task.dueDate).fromNow(),
+      link: link,
+      assetName: asset.name
+    };
+  });
+}
 }
