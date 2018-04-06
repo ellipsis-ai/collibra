@@ -10,12 +10,12 @@ Hello, {successResult.slackUserName} and welcome to the Collibra skill.
 - As `datasteward`, you can approve or reject the proposed assets within the simple approval workflow
 
 **Some useful commands you can type:**
-- `...find definition for <search query>` – find the definition for an asset matching <search query>
+- `...find definition for <search query>` – Find the definition for an asset matching <search query>
 - `...become datasteward` – Become a Collibra user with the Data Steward role for the demo domain
 - `...resign` – Go back to the default Data Citizen role
-- `...login to collibra` – log in as another user
-- `...check for next collibra task` - start on the next collibra task, if any.
-- `...list demo assets` – list all the assets in the demo domain
-- `...collibra intro` – see the intro message again
+- `...login to collibra` – Log in as another user
+- `...check for next collibra task` - Start on the next collibra task, if any.
+- `...list demo assets` – List all the assets in the demo domain
+- `...collibra intro` – See the intro message again
 
 A good way to try out this skill is to find an existing definition or add a new one.
