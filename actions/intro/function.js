@@ -23,10 +23,6 @@ getLoginForCurrentUser(ellipsis).then(login => {
         args: [ 
           { name: "domain", value: defaultDomain }
         ]
-      },
-      { 
-        label: "See useful commands",
-        actionName: "intro-useful-commands"
       }
     ]
   });
