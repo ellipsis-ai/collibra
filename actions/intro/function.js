@@ -25,7 +25,7 @@ getLoginForCurrentUser(ellipsis).then(login => {
         ]
       },
       { 
-        label: "Other useful commands",
+        label: "See useful commands",
         actionName: "intro-useful-commands"
       }
     ]
