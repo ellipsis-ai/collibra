@@ -1,5 +1,5 @@
 function(username, password, ellipsis) {
-  const getSessionToken = require('session-token');
+  const getSessionToken = require('session-token').getSessionToken;
 const saveLogin = require('saved-login').saveLogin;
 
 getSessionToken(ellipsis, username, password).
