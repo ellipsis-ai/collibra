@@ -1,4 +1,14 @@
 [ {
+  "text" : "log out",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+}, {
+  "text" : "logout",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+}, {
   "text" : "resign",
   "requiresMention" : true,
   "isRegex" : false,
