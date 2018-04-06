@@ -14,16 +14,13 @@ getLoginForCurrentUser(ellipsis).then(login => {
   }, {
     choices: [
       { 
-        label: "Find an asset definition",
+        label: "Find a demo asset definition",
         actionName: "find-definition",
         allowOthers: true
       },
       {
-        label: "Add a new asset",
-        actionName: "add-asset",
-        args: [ 
-          { name: "domain", value: defaultDomain }
-        ],
+        label: "Add a new demo asset",
+        actionName: "add-demo-asset",
         allowOthers: true
       }
     ]
