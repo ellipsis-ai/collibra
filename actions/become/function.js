@@ -1,6 +1,6 @@
 function(username, ellipsis) {
   const SavedLogin = require('saved-login');
-const getSessionToken = require('session-token');
+const getSessionToken = require('session-token').getSessionToken;
 
 SavedLogin.getLoginForUsername(ellipsis, username).then(login => {
   const password = login.password;
