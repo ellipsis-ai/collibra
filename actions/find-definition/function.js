@@ -1,6 +1,7 @@
 function(asset, ellipsis) {
   const CollibraApi = require('collibra-api');
 const collibra = CollibraApi(ellipsis);
+const formatAttribute = require('definition-helpers').textForAttribute;
 
 if (asset.id == "ellipsis-add-new") {
   addNewAsset();
@@ -23,7 +24,7 @@ function addNewAsset() {
 
 function withChosenAsset() {
   collibra.definitionAttributesFor(asset.id).then(attrs => {
-    const definitions = attrs.map(ea => ea.value.toString().trim()).filter(ea => ea.length > 0);
+    const definitions = attrs.map(formatAttribute).filter(ea => ea.length > 0);
     const hasDefinition = definitions.length > 0;
     const successResult = {
       isAddingNew: false,

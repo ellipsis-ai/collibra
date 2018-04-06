@@ -2,6 +2,7 @@ function(task, ellipsis) {
   const CollibraApi = require('collibra-api');
 const collibra = CollibraApi(ellipsis);
 const workflowHelpers = require('workflow-helpers')(ellipsis);
+const formatAttribute = require('definition-helpers').textForAttribute;
 
 workflowHelpers.markHasRunForTask(task.id).then(res => {
   if (task.type == "vote") {
@@ -64,7 +65,7 @@ function messageFor(assetId) {
   return new Promise((resolve, reject) => {
     collibra.findAsset(assetId).then(asset => {
       collibra.definitionAttributesFor(asset.id).then(attrs => {
-        const definitions = (attrs.map(ea => ea.value.toString().trim()).filter(ea => ea.length > 0));
+        const definitions = (attrs.map(formatAttribute).filter(ea => ea.length > 0));
         const link = collibra.linkFor("asset", asset.id);
         let text;
         if (definitions.length > 0) {
