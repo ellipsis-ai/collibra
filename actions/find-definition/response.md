@@ -8,6 +8,6 @@
 > {definition}
 {endfor}
 {else}
-{successResult.name} doesn't yet have a definition.
+{successResult.name} doesn't yet have a definition. You can add one now if you like.
 {endif}
 {endif}
