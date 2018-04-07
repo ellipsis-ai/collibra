@@ -34,11 +34,14 @@ function withChosenAsset() {
       definitions: definitions
     };
     const options = hasDefinition ? {} : {
-      next: {
-          actionName: "maybe-add-definition", 
-          args: [ { name: "assetId", value: asset.id }, { name: "assetName", value: asset.label }]
+      choices: [
+        {
+          label: "Add a definition",
+          actionName: "add-definition", 
+          args: [ { name: "assetId", value: asset.id } ]
         }
-      };
+      ]
+    };
     ellipsis.success(successResult, options);
   });
 }
