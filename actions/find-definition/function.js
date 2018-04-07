@@ -38,7 +38,7 @@ function withChosenAsset() {
         {
           label: "Add a definition",
           actionName: "add-definition", 
-          args: [ { name: "assetId", value: asset.id } ]
+          args: [ { name: "asset", value: asset.id } ]
         }
       ]
     };
