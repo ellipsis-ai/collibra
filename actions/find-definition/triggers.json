@@ -4,13 +4,8 @@
   "isRegex" : false,
   "caseSensitive" : false
 }, {
-  "text" : "find definition for {asset}",
+  "text" : "find definition\\s*(?:for )?\\s*(.*+)",
   "requiresMention" : true,
-  "isRegex" : false,
-  "caseSensitive" : false
-}, {
-  "text" : "find definition {asset}",
-  "requiresMention" : true,
-  "isRegex" : false,
+  "isRegex" : true,
   "caseSensitive" : false
 } ]
