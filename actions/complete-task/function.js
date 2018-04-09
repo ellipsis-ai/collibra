@@ -11,40 +11,6 @@ workflowHelpers.markHasRunForTask(task.id).then(res => {
         workflowHelpers.completeTaskWith(task, "complete-review-task", msg);
       });
     });
-  } else if (task.key == "add_related_terms") {
-    collibra.relationTypesWithRole("Related to").then(types => {
-      const relatedToId = types[0] ? types[0].id : null;
-      workflowHelpers.relationsTextFor(task.assetId, relatedToId).then(text => {
-        const args = relatedToId ? [{ name: "relationTypeId", value: relatedToId }] : [];
-        workflowHelpers.completeTaskWith(task, "maybe-add-relations-task", text, args);
-      });
-    });
-  } else if (task.key == "add_policies" || task.key == "add_complied_policies") {
-    collibra.relationTypesWithRole("Complies to").then(types => {
-      const compliesToId = types[0] ? types[0].id : null;
-      workflowHelpers.relationsTextFor(task.assetId, compliesToId).then(text => {
-        const args = compliesToId ? [{ name: "relationTypeId", value: compliesToId }] : [];
-        workflowHelpers.completeTaskWith(task, "maybe-add-relations-task", text, args);
-      });
-    });
-  } else if (task.key == "address_comments") {
-    workflowHelpers.commentsTextFor(task).then(commentsText => {
-      workflowHelpers.completeSimpleTask(task, commentsText);
-    });
-  } else if (task.key == "correct_description") {
-    workflowHelpers.commentsTextFor(task).then(commentsText => {
-      messageFor(task.assetId).then(msg => {
-        const text = `${msg}\n\n${commentsText}`;
-        workflowHelpers.completeTaskWith(task, "correct-description-task", text);  
-      });
-    })
-  } else if (task.key == "provide_comment") {
-    collibra.relationTypesWithRole("Complies to").then(types => {
-      const compliesToId = types[0] ? types[0].id : null;
-      workflowHelpers.relationsTextFor(task.assetId, compliesToId).then(text => {
-        workflowHelpers.completeTaskWith(task, "complete-comment-task", text);   
-      });
-    });
   } else {
     collibra.formForWorkflowTask(task.id).then(res => {
       const dontKnowResponse = `
