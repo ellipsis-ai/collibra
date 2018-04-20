@@ -14,7 +14,7 @@
   "isRegex" : false,
   "caseSensitive" : false
 }, {
-  "text" : "find definition\\s*(?:for )?\\s*(.*+)",
+  "text" : "find definition\\s*(?:for )?\\s*(.+)",
   "requiresMention" : true,
   "isRegex" : true,
   "caseSensitive" : false
