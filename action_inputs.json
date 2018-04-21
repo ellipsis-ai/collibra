@@ -1,41 +1,11 @@
 [ {
-  "exportId" : "-8uRJkzdT3Cj7cXR1qKfeA",
-  "name" : "task",
-  "paramType" : {
-    "exportId" : "fOF7EstgSEWLkBAWPYZtng",
-    "name" : "WorkflowTask"
-  },
-  "question" : "Which task?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "0UezNVfCS9iuDyqLFFbobQ",
-  "name" : "relationType",
-  "paramType" : {
-    "exportId" : "4hIrP7kpTpaFhQ5JeJX9Ng",
-    "name" : "RelationType"
-  },
-  "question" : "What type of relation?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
   "exportId" : "5GOAOTDiTK6ypna9pguniQ",
   "name" : "asset",
   "paramType" : {
     "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
     "name" : "AddableAsset"
   },
-  "question" : "For which asset do you want to find a definition? Enter a search query:",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "5fsKa1mAQxSTiS406gpHkA",
-  "name" : "task",
-  "paramType" : {
-    "exportId" : "fOF7EstgSEWLkBAWPYZtng",
-    "name" : "WorkflowTask"
-  },
-  "question" : "For which task?",
+  "question" : "For which asset do you want to find a definition?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -49,16 +19,6 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
-  "exportId" : "BLdl1zJiSCyeMZ6cE7ztbQ",
-  "name" : "action",
-  "paramType" : {
-    "exportId" : "yk0UZDyFQSSdaXuArYtAbQ",
-    "name" : "AddRelationAction"
-  },
-  "question" : "How do you want to proceed?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
   "exportId" : "CipPxyNIS1CZIX_HTk2Bpg",
   "name" : "asset",
   "paramType" : {
@@ -66,16 +26,6 @@
     "name" : "NonAddableAsset"
   },
   "question" : "Which asset do you want to define?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "HJ6mPOaKT5S1YGuRKAMZgw",
-  "name" : "role",
-  "paramType" : {
-    "exportId" : "VsHTE2d7SayJMO0pQQ2t1w",
-    "name" : "Role"
-  },
-  "question" : "For which role?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -96,16 +46,6 @@
     "name" : "WorkflowTask"
   },
   "question" : "What is the value for `task`?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "KVTGu6VwS9GrqDbvpLC3UA",
-  "name" : "newDefinition",
-  "paramType" : {
-    "exportId" : "Text",
-    "name" : "Text"
-  },
-  "question" : "What should the updated definition be? You can type `add: <new content>` to append, `no change` to leave it as-is, or just type in a replacement definition.",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -159,26 +99,6 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
-  "exportId" : "YIjKa5bZR366kOrDZNugmQ",
-  "name" : "sourceAsset",
-  "paramType" : {
-    "exportId" : "DkBIv7E5RI21VHDFKU5CbA",
-    "name" : "NonAddableAsset"
-  },
-  "question" : "I need the source asset of this relation. Enter a search query:",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "a23P3qkLTpSoKPACnby86A",
-  "name" : "relationTypeId",
-  "paramType" : {
-    "exportId" : "Text",
-    "name" : "Text"
-  },
-  "question" : "What is the value for `relationTypeId`?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
   "exportId" : "ct9qjkuyRKWEVlMTICFXng",
   "name" : "username",
   "paramType" : {
@@ -186,16 +106,6 @@
     "name" : "Text"
   },
   "question" : "Become who?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "djhXi9QVQ4uNdAAHLEyEYA",
-  "name" : "asset",
-  "paramType" : {
-    "exportId" : "DkBIv7E5RI21VHDFKU5CbA",
-    "name" : "NonAddableAsset"
-  },
-  "question" : "For which asset?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -219,26 +129,6 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
-  "exportId" : "hxWaj7QmRKaAqlmAcGwYgw",
-  "name" : "user",
-  "paramType" : {
-    "exportId" : "ckpchJ8bS_-wo9bfPQFtVw",
-    "name" : "User"
-  },
-  "question" : "Who should have this role? Search for the user by name:",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "hzDdVb9IQAKytQzQrR9oHw",
-  "name" : "targetAsset",
-  "paramType" : {
-    "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
-    "name" : "AddableAsset"
-  },
-  "question" : "I need the target asset of this relation. Enter a search query:",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
   "exportId" : "n1cunQCvRoGPFJPcUzG0JA",
   "name" : "password",
   "paramType" : {
@@ -246,16 +136,6 @@
     "name" : "Text"
   },
   "question" : "What is your password for this Collibra instance?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "qdiFg3nWShKNs-E-KAhv5A",
-  "name" : "asset",
-  "paramType" : {
-    "exportId" : "DkBIv7E5RI21VHDFKU5CbA",
-    "name" : "NonAddableAsset"
-  },
-  "question" : "For which asset?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -276,16 +156,6 @@
     "name" : "ReviewAction"
   },
   "question" : "Do you want to approve or reject this asset?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
-  "exportId" : "ujRQVUnGSCKibxRO9uLolg",
-  "name" : "task",
-  "paramType" : {
-    "exportId" : "fOF7EstgSEWLkBAWPYZtng",
-    "name" : "WorkflowTask"
-  },
-  "question" : "For which task?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
