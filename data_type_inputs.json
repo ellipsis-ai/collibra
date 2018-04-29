@@ -5,7 +5,7 @@
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "What is the value for `searchQuery`?",
+  "question" : "Search by asset name.",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -15,7 +15,7 @@
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "Enter a search query.",
+  "question" : "Search by asset name.",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -25,7 +25,7 @@
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "What is the value for `searchQuery`?",
+  "question" : "Search for a user by name.",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 } ]
