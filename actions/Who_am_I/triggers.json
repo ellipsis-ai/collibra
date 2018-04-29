@@ -1,4 +1,14 @@
 [ {
+  "text" : "who am i",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+}, {
+  "text" : "who ami",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+}, {
   "text" : "whoami",
   "requiresMention" : true,
   "isRegex" : false,

@@ -1,5 +1,25 @@
 [ {
+  "text" : "find asset",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+}, {
+  "text" : "find asset def",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+}, {
+  "text" : "find asset definition",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+}, {
   "text" : "find definition",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+}, {
+  "text" : "search for definition",
   "requiresMention" : true,
   "isRegex" : false,
   "caseSensitive" : false
@@ -7,6 +27,11 @@
   "text" : "define {asset}",
   "requiresMention" : true,
   "isRegex" : false,
+  "caseSensitive" : false
+}, {
+  "text" : "find asset\\s*(?:for )?\\s*(.+)",
+  "requiresMention" : true,
+  "isRegex" : true,
   "caseSensitive" : false
 }, {
   "text" : "find definition\\s*(?:for )?\\s*(.+)",
