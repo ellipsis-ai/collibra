@@ -2,5 +2,6 @@
   "exportId" : "3m8J4YCETreJorUoIEYr_A",
   "name" : "find-definition",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : false
 }

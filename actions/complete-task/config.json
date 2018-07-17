@@ -2,5 +2,6 @@
   "exportId" : "iE0W6SmBTDiTvHHqqMtU2Q",
   "name" : "complete-task",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : false
 }

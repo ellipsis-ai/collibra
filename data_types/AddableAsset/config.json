@@ -2,6 +2,7 @@
   "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
   "name" : "AddableAsset",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : true,
   "dataTypeConfig" : {
     "fields" : [ ],

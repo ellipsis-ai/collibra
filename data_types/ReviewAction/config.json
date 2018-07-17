@@ -2,6 +2,7 @@
   "exportId" : "FfttiRA5QHS3_X_tc1WRfg",
   "name" : "ReviewAction",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : true,
   "dataTypeConfig" : {
     "fields" : [ ],

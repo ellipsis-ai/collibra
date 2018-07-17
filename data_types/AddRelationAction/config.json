@@ -2,6 +2,7 @@
   "exportId" : "yk0UZDyFQSSdaXuArYtAbQ",
   "name" : "AddRelationAction",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : true,
   "dataTypeConfig" : {
     "fields" : [ ],

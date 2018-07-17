@@ -2,6 +2,7 @@
   "exportId" : "DkBIv7E5RI21VHDFKU5CbA",
   "name" : "NonAddableAsset",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : true,
   "dataTypeConfig" : {
     "fields" : [ ],

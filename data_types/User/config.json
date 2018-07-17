@@ -2,6 +2,7 @@
   "exportId" : "ckpchJ8bS_-wo9bfPQFtVw",
   "name" : "User",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : true,
   "dataTypeConfig" : {
     "fields" : [ ],

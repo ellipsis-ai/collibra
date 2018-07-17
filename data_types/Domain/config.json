@@ -2,6 +2,7 @@
   "exportId" : "3Z_IeQbeShiewqeJd6FA3A",
   "name" : "Domain",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : true,
   "dataTypeConfig" : {
     "fields" : [ ],

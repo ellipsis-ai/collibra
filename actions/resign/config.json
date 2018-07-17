@@ -2,5 +2,6 @@
   "exportId" : "A_Or6k5LSvelfowYbrpdbg",
   "name" : "resign",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : false
 }

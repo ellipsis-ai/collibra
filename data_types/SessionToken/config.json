@@ -2,6 +2,7 @@
   "exportId" : "mkHJUDNHQy6E9_1BVcQ_eQ",
   "name" : "SessionToken",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : true,
   "dataTypeConfig" : {
     "fields" : [ {

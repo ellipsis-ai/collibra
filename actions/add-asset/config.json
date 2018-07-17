@@ -2,5 +2,6 @@
   "exportId" : "xo8PRRxWRH2613NLdWV5FA",
   "name" : "add-asset",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : false
 }

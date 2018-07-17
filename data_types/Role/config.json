@@ -2,6 +2,7 @@
   "exportId" : "VsHTE2d7SayJMO0pQQ2t1w",
   "name" : "Role",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : true,
   "dataTypeConfig" : {
     "fields" : [ ],

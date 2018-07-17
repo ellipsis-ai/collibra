@@ -2,5 +2,6 @@
   "exportId" : "KGfOABZASW-cQrQD_zoFzw",
   "name" : "list-demo-assets",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : false
 }

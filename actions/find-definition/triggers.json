@@ -29,11 +29,6 @@
   "isRegex" : false,
   "caseSensitive" : false
 }, {
-  "text" : "find asset\\s*(?:for )?\\s*(.+)",
-  "requiresMention" : true,
-  "isRegex" : true,
-  "caseSensitive" : false
-}, {
   "text" : "find definition\\s*(?:for )?\\s*(.+)",
   "requiresMention" : true,
   "isRegex" : true,

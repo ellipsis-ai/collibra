@@ -2,5 +2,6 @@
   "exportId" : "O6IG1xWeQ5qHBW7IvLYYOQ",
   "name" : "login",
   "forcePrivateResponse" : true,
+  "canBeMemoized" : false,
   "isDataType" : false
 }

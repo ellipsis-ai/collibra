@@ -2,5 +2,6 @@
   "exportId" : "vbJOSzAkSKGSXhXZhq45-g",
   "name" : "next-task",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : false
 }

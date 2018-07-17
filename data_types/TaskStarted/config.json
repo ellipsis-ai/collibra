@@ -2,6 +2,7 @@
   "exportId" : "Auroe8EyQaaxp_qm0Gzvqw",
   "name" : "TaskStarted",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : true,
   "dataTypeConfig" : {
     "fields" : [ {

@@ -2,5 +2,6 @@
   "exportId" : "yI8AngF8QkKZtRCmoPjZOQ",
   "name" : "Who am I?",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : false
 }

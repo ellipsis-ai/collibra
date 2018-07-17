@@ -2,5 +2,6 @@
   "exportId" : "posi3lJERbqPyor-3UHvkQ",
   "name" : "complete-comment-task",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : false
 }

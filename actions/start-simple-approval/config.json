@@ -2,5 +2,6 @@
   "exportId" : "9x6JoskZT6K7XxVc_p5KBQ",
   "name" : "start-simple-approval",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : false
 }

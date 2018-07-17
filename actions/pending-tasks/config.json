@@ -2,5 +2,6 @@
   "exportId" : "mZkbjpS4RYmHovAtLj8hTA",
   "name" : "pending-tasks",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : false
 }

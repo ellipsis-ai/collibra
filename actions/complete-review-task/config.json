@@ -2,5 +2,6 @@
   "exportId" : "ffRP2zfORGufwGFIN22Lrw",
   "name" : "complete-review-task",
   "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
   "isDataType" : false
 }
