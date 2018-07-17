@@ -3,5 +3,6 @@
   "name" : "login",
   "forcePrivateResponse" : true,
   "canBeMemoized" : false,
-  "isDataType" : false
+  "isDataType" : false,
+  "isTest" : false
 }

@@ -3,5 +3,6 @@
   "name" : "become",
   "forcePrivateResponse" : false,
   "canBeMemoized" : false,
-  "isDataType" : false
+  "isDataType" : false,
+  "isTest" : false
 }

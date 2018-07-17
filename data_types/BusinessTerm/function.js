@@ -1,4 +1,4 @@
 function(searchQuery, ellipsis) {
   const addableAssetsMatching = require('asset-helpers').addableAssetsMatching;
-addableAssetsMatching(ellipsis, searchQuery).then(ellipsis.success);
+addableAssetsMatching(ellipsis, searchQuery, "Business Term").then(ellipsis.success);
 }
