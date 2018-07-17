@@ -19,6 +19,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "SlyOps_fTj2ooZ_T4QFi_g",
+  "name" : "searchQuery",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "Search by the acronym.",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "YlfsZ4eETv6NeXoRAP751g",
   "name" : "searchQuery",
   "paramType" : {
@@ -36,6 +46,16 @@
     "name" : "Text"
   },
   "question" : "Search for a user by name.",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "yIJMFt3-Q4-nQCpxm1Suww",
+  "name" : "searchQuery",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "Search by report name.",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 } ]

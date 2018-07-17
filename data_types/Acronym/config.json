@@ -1,0 +1,12 @@
+{
+  "exportId" : "rov9PsneShuTge9A0HlHzA",
+  "name" : "Acronym",
+  "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
+  "isDataType" : true,
+  "isTest" : false,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}

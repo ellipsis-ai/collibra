@@ -139,6 +139,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "kCOcYk0yS2awiXZ-S4gvAA",
+  "name" : "acronym",
+  "paramType" : {
+    "exportId" : "rov9PsneShuTge9A0HlHzA",
+    "name" : "Acronym"
+  },
+  "question" : "Which acronym are you looking for?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "n1cunQCvRoGPFJPcUzG0JA",
   "name" : "password",
   "paramType" : {
@@ -146,6 +156,16 @@
     "name" : "Text"
   },
   "question" : "What is your password for this Collibra instance?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "qcOtziABShutUQRENP6QsQ",
+  "name" : "report",
+  "paramType" : {
+    "exportId" : "1iqJUQmdRZCDwlBnZISwtg",
+    "name" : "Report"
+  },
+  "question" : "Which report are you looking for?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
