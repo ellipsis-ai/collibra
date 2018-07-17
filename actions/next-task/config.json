@@ -3,5 +3,6 @@
   "name" : "next-task",
   "forcePrivateResponse" : false,
   "canBeMemoized" : false,
-  "isDataType" : false
+  "isDataType" : false,
+  "isTest" : false
 }

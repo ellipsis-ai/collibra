@@ -3,5 +3,6 @@
   "name" : "start-simple-approval",
   "forcePrivateResponse" : false,
   "canBeMemoized" : false,
-  "isDataType" : false
+  "isDataType" : false,
+  "isTest" : false
 }

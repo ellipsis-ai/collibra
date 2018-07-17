@@ -9,6 +9,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "NltNoOKfQHqz8m3dDytjBQ",
+  "name" : "searchQuery",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "Search by business term name.",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "YlfsZ4eETv6NeXoRAP751g",
   "name" : "searchQuery",
   "paramType" : {

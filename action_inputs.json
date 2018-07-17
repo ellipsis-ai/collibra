@@ -1,4 +1,14 @@
 [ {
+  "exportId" : "2ERJZv-8RteWlHU01fJz9g",
+  "name" : "businessTerm",
+  "paramType" : {
+    "exportId" : "YwBFIInOTKm07FpKEJBOLg",
+    "name" : "BusinessTerm"
+  },
+  "question" : "Which business term are you looking for?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "5GOAOTDiTK6ypna9pguniQ",
   "name" : "asset",
   "paramType" : {
