@@ -39,6 +39,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "HlHhEDFgSISxzWUDr60jhw",
+  "name" : "community",
+  "paramType" : {
+    "exportId" : "JpOx4Z4wS6iWnoSAhSL8ZA",
+    "name" : "Community"
+  },
+  "question" : "For which community?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "IIvhyntZSDe586MtIFi2ow",
   "name" : "name",
   "paramType" : {

@@ -1,0 +1,12 @@
+{
+  "exportId" : "JpOx4Z4wS6iWnoSAhSL8ZA",
+  "name" : "Community",
+  "forcePrivateResponse" : false,
+  "canBeMemoized" : false,
+  "isDataType" : true,
+  "isTest" : false,
+  "dataTypeConfig" : {
+    "fields" : [ ],
+    "usesCode" : true
+  }
+}
