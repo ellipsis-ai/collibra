@@ -20,6 +20,13 @@
         "name" : "Text"
       },
       "isLabel" : false
+    }, {
+      "name" : "timestamp",
+      "fieldType" : {
+        "exportId" : "Text",
+        "name" : "Text"
+      },
+      "isLabel" : false
     } ],
     "usesCode" : false
   }
