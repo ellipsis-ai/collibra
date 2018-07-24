@@ -7,10 +7,12 @@ CollibraApi(ellipsis).then(collibra => {
     const collibraUsername = login ? login.username : "<not logged in>";
     const isCannedUser = collibra.isCannedUser(collibraUsername);
     const defaultDomain = ellipsis.env.COLLIBRA_RESTRICT_TO_DOMAIN_ID;
+    const domainName = "Demo – Steelcase"
     ellipsis.success({
       slackUserName: ellipsis.userInfo.fullName,
       collibraUsername: collibraUsername,
-      isCannedUser: isCannedUser
+      isCannedUser: isCannedUser,
+      domainName: domainName
     }, {
       choices: [
         { 
