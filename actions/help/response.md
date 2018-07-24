@@ -3,10 +3,10 @@ Hello, {successResult.slackUserName} and welcome to the Collibra skill.
 **Some things you might want to know:**
 - You are currently logged in as user `{successResult.collibraUsername}` in Collibra. 
 {if successResult.isCannedUser}
-- Because you are logged in as a demo user, you will only see assets in the `Ellipsis Demo Domain`.
+- Because you are logged in as a demo user, you will only see assets in the `{successResult.domainName}`.
 {endif}
 - The `datacitizen` and `datasteward` Collibra users were created specifically for this demo, to allow you to try out the system in two different roles: 
-- As `datacitizen`, you can find and create assets within the `Ellipsis Demo Domain`. You can also start a simple approval workflow for these assets.
+- As `datacitizen`, you can find and create assets within the `{successResult.domainName}`. You can also start a simple approval workflow for these assets.
 - As `datasteward`, you can approve or reject the proposed assets within the simple approval workflow
 
 **Some useful commands you can type:**
