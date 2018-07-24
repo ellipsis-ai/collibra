@@ -1,8 +1,8 @@
 function(task, comment, ellipsis) {
-  const workflowHelpers = require('workflow-helpers')(ellipsis);
-
-const formProperties = {
-  comment: comment
-};
-workflowHelpers.completeTaskAndProceed(task, formProperties);
+  require('workflow-helpers')(ellipsis).then(workflowHelpers => {
+  const formProperties = {
+    comment: comment
+  };
+  workflowHelpers.completeTaskAndProceed(task, formProperties);
+});
 }
