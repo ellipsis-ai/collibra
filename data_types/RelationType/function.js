@@ -1,13 +1,14 @@
 function(ellipsis) {
   const CollibraApi = require('collibra-api');
-const api = CollibraApi(ellipsis);
 
-api.allAssetRelationTypes().then(types => {
-  ellipsis.success(types.map(ea => {
-    return {
-      id: ea.id,
-      label: `${ea.role}`
-    };
-  }));
+CollibraApi(ellipsis).then(api => {
+  api.allAssetRelationTypes().then(types => {
+    ellipsis.success(types.map(ea => {
+      return {
+        id: ea.id,
+        label: `${ea.role}`
+      };
+    }));
+  });
 });
 }
