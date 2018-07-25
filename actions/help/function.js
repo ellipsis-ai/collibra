@@ -17,14 +17,28 @@ CollibraApi(ellipsis).then(collibra => {
       }, {
         choices: [
           { 
-            label: "Find a demo asset definition",
-            actionName: "find-definition",
-            allowOthers: true
+            label: "Find a business term",
+            actionName: "find-business-term",
+            allowOthers: true,
+            allowMultipleSelections: true
           },
           {
-            label: "Add a new demo asset",
-            actionName: "add-demo-asset",
-            allowOthers: true
+            label: "Find an acronym",
+            actionName: "find-acronym",
+            allowOthers: true,
+            allowMultipleSelections: true
+          },
+          {
+            label: "Find a report",
+            actionName: "find-report",
+            allowOthers: true,
+            allowMultipleSelections: true
+          },
+          {
+            label: "Find a business steward",
+            actionName: "find-business-steward",
+            allowOthers: true,
+            allowMultipleSelections: true
           }
         ]
       });

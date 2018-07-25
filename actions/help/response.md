@@ -23,4 +23,4 @@ Hello, {successResult.slackUserName} and welcome to the Collibra skill.
 - `...list demo assets` – List all the assets in the demo domain
 - `...collibra intro` – See the intro message again
 
-A good way to try out this skill is to find an existing definition or add a new one. Or [watch a quick video introduction](https://vimeo.com/263880226).
+Here are some shortcuts for common use cases:
