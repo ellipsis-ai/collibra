@@ -7,25 +7,27 @@ CollibraApi(ellipsis).then(collibra => {
     const collibraUsername = login ? login.username : "<not logged in>";
     const isCannedUser = collibra.isCannedUser(collibraUsername);
     const defaultDomain = ellipsis.env.COLLIBRA_RESTRICT_TO_DOMAIN_ID;
-    const domainName = "Demo – Steelcase"
-    ellipsis.success({
-      slackUserName: ellipsis.userInfo.fullName,
-      collibraUsername: collibraUsername,
-      isCannedUser: isCannedUser,
-      domainName: domainName
-    }, {
-      choices: [
-        { 
-          label: "Find a demo asset definition",
-          actionName: "find-definition",
-          allowOthers: true
-        },
-        {
-          label: "Add a new demo asset",
-          actionName: "add-demo-asset",
-          allowOthers: true
-        }
-      ]
+    collibra.domainToRestrictToParams().then(domain => {
+      const domainName = domain ? domain.name : "<demo domain not set>";
+      ellipsis.success({
+        slackUserName: ellipsis.userInfo.fullName,
+        collibraUsername: collibraUsername,
+        isCannedUser: isCannedUser,
+        domainName: domainName
+      }, {
+        choices: [
+          { 
+            label: "Find a demo asset definition",
+            actionName: "find-definition",
+            allowOthers: true
+          },
+          {
+            label: "Add a new demo asset",
+            actionName: "add-demo-asset",
+            allowOthers: true
+          }
+        ]
+      });
     });
   });
 });
