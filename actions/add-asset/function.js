@@ -17,6 +17,8 @@ CollibraApi(ellipsis).then(collibra => {
         args: [{ name: "asset", value: newAssetId }]
       }]
     });
+  }).catch(err => {
+    ellipsis.error(err, { userMessage: err.userMessage });
   });
 });
 }
