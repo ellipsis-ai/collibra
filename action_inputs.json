@@ -1,4 +1,24 @@
 [ {
+  "exportId" : "-vHUaxi1Rjm2XIV2YqDRGg",
+  "name" : "expectedAssetTypeName",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `expectedAssetTypeName`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "03SynLWBTFm1hBOyNCuTEg",
+  "name" : "name",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `name`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "2ERJZv-8RteWlHU01fJz9g",
   "name" : "businessTerm",
   "paramType" : {
@@ -26,6 +46,16 @@
     "name" : "NonAddableAsset"
   },
   "question" : "For which asset?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "BrRq2kYiReGF8Ih6f6Zx6Q",
+  "name" : "domain",
+  "paramType" : {
+    "exportId" : "3Z_IeQbeShiewqeJd6FA3A",
+    "name" : "Domain"
+  },
+  "question" : "What is the value for `domain`?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {

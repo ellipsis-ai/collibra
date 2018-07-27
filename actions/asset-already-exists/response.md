@@ -1,0 +1,1 @@
+An asset of another type ({successResult.type.name}) already exists with the same name in {domain.label}.
