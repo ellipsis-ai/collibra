@@ -1,7 +1,7 @@
 {
   "exportId" : "O6IG1xWeQ5qHBW7IvLYYOQ",
   "name" : "login",
-  "forcePrivateResponse" : true,
+  "responseTypeId" : "Private",
   "canBeMemoized" : false,
   "isDataType" : false,
   "isTest" : false

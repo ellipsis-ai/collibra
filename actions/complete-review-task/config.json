@@ -1,7 +1,7 @@
 {
   "exportId" : "ffRP2zfORGufwGFIN22Lrw",
   "name" : "complete-review-task",
-  "forcePrivateResponse" : false,
+  "responseTypeId" : "Normal",
   "canBeMemoized" : false,
   "isDataType" : false,
   "isTest" : false

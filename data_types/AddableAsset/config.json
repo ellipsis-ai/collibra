@@ -1,7 +1,7 @@
 {
   "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
   "name" : "AddableAsset",
-  "forcePrivateResponse" : false,
+  "responseTypeId" : "Normal",
   "canBeMemoized" : false,
   "isDataType" : true,
   "isTest" : false,

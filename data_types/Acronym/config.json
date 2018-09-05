@@ -1,7 +1,7 @@
 {
   "exportId" : "rov9PsneShuTge9A0HlHzA",
   "name" : "Acronym",
-  "forcePrivateResponse" : false,
+  "responseTypeId" : "Normal",
   "canBeMemoized" : false,
   "isDataType" : true,
   "isTest" : false,

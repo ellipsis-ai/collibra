@@ -1,7 +1,7 @@
 {
   "exportId" : "YwBFIInOTKm07FpKEJBOLg",
   "name" : "BusinessTerm",
-  "forcePrivateResponse" : false,
+  "responseTypeId" : "Normal",
   "canBeMemoized" : false,
   "isDataType" : true,
   "isTest" : false,

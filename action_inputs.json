@@ -1,11 +1,11 @@
 [ {
-  "exportId" : "-vHUaxi1Rjm2XIV2YqDRGg",
-  "name" : "expectedAssetTypeName",
+  "exportId" : "-irAnTPdSpeUytGH4uuLpw",
+  "name" : "issue",
   "paramType" : {
-    "exportId" : "Text",
-    "name" : "Text"
+    "exportId" : "qvOkR8JQT0OOdW-vNLMBag",
+    "name" : "Issue"
   },
-  "question" : "What is the value for `expectedAssetTypeName`?",
+  "question" : "Which issue are you looking for?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {

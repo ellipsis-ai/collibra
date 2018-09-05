@@ -1,7 +1,7 @@
 {
   "exportId" : "icaZ_hGESLeOtw-NioxDpw",
   "name" : "find-acronym",
-  "forcePrivateResponse" : false,
+  "responseTypeId" : "Normal",
   "canBeMemoized" : false,
   "isDataType" : false,
   "isTest" : false
