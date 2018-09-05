@@ -1,7 +1,7 @@
 {
   "exportId" : "Q1I5XPngRH2T5E628HglAw",
   "name" : "find-business-steward",
-  "forcePrivateResponse" : false,
+  "responseTypeId" : "Normal",
   "canBeMemoized" : false,
   "isDataType" : false,
   "isTest" : false

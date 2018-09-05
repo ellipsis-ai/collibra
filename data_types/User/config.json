@@ -1,7 +1,7 @@
 {
   "exportId" : "ckpchJ8bS_-wo9bfPQFtVw",
   "name" : "User",
-  "forcePrivateResponse" : false,
+  "responseTypeId" : "Normal",
   "canBeMemoized" : false,
   "isDataType" : true,
   "isTest" : false,

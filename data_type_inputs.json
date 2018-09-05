@@ -1,4 +1,14 @@
 [ {
+  "exportId" : "D1CyT00jRq2TjAx3VXg0VA",
+  "name" : "searchQuery",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "Search by issue name/title.",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "KOQGDkkEQHOzfmuNBvuvfQ",
   "name" : "searchQuery",
   "paramType" : {

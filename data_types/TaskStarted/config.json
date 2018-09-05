@@ -1,7 +1,7 @@
 {
   "exportId" : "Auroe8EyQaaxp_qm0Gzvqw",
   "name" : "TaskStarted",
-  "forcePrivateResponse" : false,
+  "responseTypeId" : "Normal",
   "canBeMemoized" : false,
   "isDataType" : true,
   "isTest" : false,

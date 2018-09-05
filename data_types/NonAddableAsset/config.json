@@ -1,7 +1,7 @@
 {
   "exportId" : "DkBIv7E5RI21VHDFKU5CbA",
   "name" : "NonAddableAsset",
-  "forcePrivateResponse" : false,
+  "responseTypeId" : "Normal",
   "canBeMemoized" : false,
   "isDataType" : true,
   "isTest" : false,
