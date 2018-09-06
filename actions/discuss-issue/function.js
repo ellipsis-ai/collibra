@@ -1,9 +1,8 @@
 function(issue, ellipsis) {
-  ellipsis.success( { 
-  permalink: ellipsis.userInfo.messageInfo.permalink || "https://example.com"
-}, {
+  ellipsis.success("", {
   next: {
-    actionName: "start-discussing-issue"
+    actionName: "start-discussing-issue",
+    args: [ { name: "issueId", value: issue.id }]
   }
 });
 }

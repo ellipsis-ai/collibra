@@ -29,6 +29,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "2vmZ8DfeQpec4e3DR_-rDQ",
+  "name" : "issueId",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `issueId`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "5GOAOTDiTK6ypna9pguniQ",
   "name" : "asset",
   "paramType" : {
