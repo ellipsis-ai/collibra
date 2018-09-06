@@ -29,6 +29,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "2vmZ8DfeQpec4e3DR_-rDQ",
+  "name" : "issueId",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `issueId`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "5GOAOTDiTK6ypna9pguniQ",
   "name" : "asset",
   "paramType" : {
@@ -146,6 +156,16 @@
     "name" : "Text"
   },
   "question" : "What should the definition be?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "aFC9bb-DQvmcnS2fZpprRw",
+  "name" : "issue",
+  "paramType" : {
+    "exportId" : "qvOkR8JQT0OOdW-vNLMBag",
+    "name" : "Issue"
+  },
+  "question" : "What is the value for `issue`?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
