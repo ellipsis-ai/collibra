@@ -1,0 +1,11 @@
+[ {
+  "text" : "discuss issue",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+}, {
+  "text" : "discuss issue {issue}",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false
+} ]

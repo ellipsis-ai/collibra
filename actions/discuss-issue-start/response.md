@@ -1,0 +1,1 @@
+Go ahead, start discussing here! This thread will be linked from [the issue in Collibra]({successResult.issueLink}) as `{successResult.commentText}`.

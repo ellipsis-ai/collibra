@@ -1,14 +1,4 @@
 [ {
-  "exportId" : "-irAnTPdSpeUytGH4uuLpw",
-  "name" : "issue",
-  "paramType" : {
-    "exportId" : "qvOkR8JQT0OOdW-vNLMBag",
-    "name" : "Issue"
-  },
-  "question" : "Which issue are you looking for?",
-  "isSavedForTeam" : false,
-  "isSavedForUser" : false
-}, {
   "exportId" : "03SynLWBTFm1hBOyNCuTEg",
   "name" : "name",
   "paramType" : {
@@ -76,6 +66,26 @@
     "name" : "NonAddableAsset"
   },
   "question" : "Which asset do you want to define?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "E1IFvQQGQO27Nd5VfbbNpw",
+  "name" : "permalink",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `permalink`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "GUPcKPOwS1aaRnWMWUaoZw",
+  "name" : "name",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What would you like to name this thread?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -149,6 +159,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "TykA6PKjTn6SwboZQHaTew",
+  "name" : "issue",
+  "paramType" : {
+    "exportId" : "qvOkR8JQT0OOdW-vNLMBag",
+    "name" : "Issue"
+  },
+  "question" : "Which issue would you like to discuss?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "YB6H-VKjTxuCuu_oehpR6A",
   "name" : "definition",
   "paramType" : {
@@ -165,7 +185,7 @@
     "exportId" : "qvOkR8JQT0OOdW-vNLMBag",
     "name" : "Issue"
   },
-  "question" : "What is the value for `issue`?",
+  "question" : "Which issue would you like to discuss?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -226,6 +246,16 @@
     "name" : "Report"
   },
   "question" : "Which report are you looking for?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "qp-3LE5VQGe70mveDkh-sQ",
+  "name" : "commentId",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `commentId`?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
