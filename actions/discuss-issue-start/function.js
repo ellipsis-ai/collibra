@@ -17,6 +17,7 @@ CollibraApi(ellipsis).then(api => {
           label: "Rename thread",
           actionName: "discuss-issue-rename-thread",
           allowMultipleSelections: true,
+          allowOthers: true,
           args: [
             { name: "permalink", value: permalink },
             { name: "commentId", value: saved.id }
