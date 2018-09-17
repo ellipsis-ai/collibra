@@ -15,6 +15,7 @@ Hello, {successResult.slackUserName} and welcome to the Collibra skill.
 - `...find report` – Find the definition for a report or add a new one
 - `...find business steward` – Find the business steward for a community
 - `...find definition for <search query>` – Find the definition for an asset matching <search query>
+- `...discuss issue` – Discuss a Collibra issue in a new linked Slack thread
 - `...add new demo asset` - Add a new asset to the demo domain
 - `...become datasteward` – Become a Collibra user with the Data Steward role for the demo domain
 - `...resign` – Go back to the default Data Citizen role
