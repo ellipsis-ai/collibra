@@ -13,7 +13,8 @@ CollibraApi(ellipsis).then(collibra => {
         slackUserName: ellipsis.userInfo.fullName,
         collibraUsername: collibraUsername,
         isCannedUser: isCannedUser,
-        domainName: domainName
+        domainName: domainName,
+        collibraInstanceUrl: collibra.collibraInstanceUrl
       }, {
         choices: [
           { 

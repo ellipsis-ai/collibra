@@ -1,7 +1,7 @@
 Hello, {successResult.slackUserName} and welcome to the Collibra skill.
 
 **Some things you might want to know:**
-- You are currently logged in as user `{successResult.collibraUsername}` in Collibra. 
+- You are currently logged in to Collibra as user `{successResult.collibraUsername}` on the [Ellipsis Demo Collibra instance]({successResult.collibraInstanceUrl}). 
 {if successResult.isCannedUser}
 - Because you are logged in as a demo user, you will only see assets in the `{successResult.domainName}`.
 {endif}
