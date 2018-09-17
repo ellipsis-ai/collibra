@@ -9,6 +9,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "1o6jzdW-Tp2rARy2ys3tDw",
+  "name" : "commentId",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `commentId`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "2ERJZv-8RteWlHU01fJz9g",
   "name" : "businessTerm",
   "paramType" : {
@@ -176,6 +186,16 @@
     "name" : "Text"
   },
   "question" : "What should the definition be?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
+  "exportId" : "Yu57iyiGQa6eKfZ2Vtkrig",
+  "name" : "message",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `message`?",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
