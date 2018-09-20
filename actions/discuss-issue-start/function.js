@@ -12,7 +12,6 @@ CollibraApi(ellipsis).then(collibra => {
   collibra.addComment(issueId, comment).then(saved => {
     api.listen({
       actionName: 'discuss-issue-update-comment',
-      messageInputName: 'message',
       args: [
         { name: "commentId", value: saved.id }
       ],
