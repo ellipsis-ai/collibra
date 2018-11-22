@@ -4,10 +4,17 @@ const formatAttribute = require('definition-helpers').textForAttribute;
 const EllipsisApi = require('ellipsis-api');
 const api = new EllipsisApi(ellipsis);
 
-const username = ellipsis.userInfo.messageInfo.details.name;
+const username = ellipsis.userInfo.fullName || `@${ellipsis.userInfo.userName}` || "Anonymous user";
 const permalink = ellipsis.userInfo.messageInfo.permalink;
+if (!permalink) {
+  ellipsis.error("No valid permalink", {
+    userMessage: "I couldn’t update Collibra because there was no valid message link to use."
+  });
+  return;
+}
+
 CollibraApi(ellipsis).then(collibra => {
-  const commentText = `${username}'s discussion in Slack`;
+  const commentText = `${username}’s discussion in ${ellipsis.userInfo.messageInfo.mediumDescription}`;
   const comment = `<a class="link" href="${permalink}">${commentText}</a>`;
   collibra.addComment(issueId, comment).then(saved => {
     api.listen({
