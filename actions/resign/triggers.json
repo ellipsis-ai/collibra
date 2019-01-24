@@ -2,15 +2,18 @@
   "text" : "log out",
   "requiresMention" : true,
   "isRegex" : false,
-  "caseSensitive" : false
+  "caseSensitive" : false,
+  "triggerType" : "MessageSent"
 }, {
   "text" : "logout",
   "requiresMention" : true,
   "isRegex" : false,
-  "caseSensitive" : false
+  "caseSensitive" : false,
+  "triggerType" : "MessageSent"
 }, {
   "text" : "resign",
   "requiresMention" : true,
   "isRegex" : false,
-  "caseSensitive" : false
+  "caseSensitive" : false,
+  "triggerType" : "MessageSent"
 } ]

@@ -2,15 +2,18 @@
   "text" : "who am i",
   "requiresMention" : true,
   "isRegex" : false,
-  "caseSensitive" : false
+  "caseSensitive" : false,
+  "triggerType" : "MessageSent"
 }, {
   "text" : "who ami",
   "requiresMention" : true,
   "isRegex" : false,
-  "caseSensitive" : false
+  "caseSensitive" : false,
+  "triggerType" : "MessageSent"
 }, {
   "text" : "whoami",
   "requiresMention" : true,
   "isRegex" : false,
-  "caseSensitive" : false
+  "caseSensitive" : false,
+  "triggerType" : "MessageSent"
 } ]
