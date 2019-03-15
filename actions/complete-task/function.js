@@ -5,7 +5,7 @@ const formatAttribute = require('definition-helpers').textForAttribute;
 CollibraApi(ellipsis).then(collibra => {
   require('workflow-helpers')(ellipsis).then(workflowHelpers => {
     workflowHelpers.markHasRunForTask(task.id).then(res => {
-      if (task.type == "vote") {
+      if (task.type == "vote" || task.type == "accept") {
         collibra.findAsset(task.assetId).then(asset => {
           messageFor(task.assetId).then(msg => {
             workflowHelpers.completeTaskWith(task, "complete-review-task", msg);
@@ -14,7 +14,7 @@ CollibraApi(ellipsis).then(collibra => {
       } else {
         collibra.formForWorkflowTask(task.id).then(res => {
           const dontKnowResponse = `
-    Sorry, I don't yet know how to deal with tasks of type \`{task.type}\`.
+    Sorry, I don't yet know how to deal with tasks of type \`${task.type}\`.
 
     Key: ${task.key}
     Description: ${task.description}
