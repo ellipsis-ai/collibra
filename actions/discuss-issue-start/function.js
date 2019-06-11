@@ -3,7 +3,6 @@ function(issueId, ellipsis) {
 const formatAttribute = require('definition-helpers').textForAttribute;
 const EllipsisApi = require('ellipsis-api');
 const api = new EllipsisApi(ellipsis);
-
 const username = ellipsis.userInfo.messageInfo.details.name;
 const permalink = ellipsis.userInfo.messageInfo.permalink;
 CollibraApi(ellipsis).then(collibra => {
@@ -15,7 +14,7 @@ CollibraApi(ellipsis).then(collibra => {
       args: [
         { name: "commentId", value: saved.id }
       ],
-      thread: ellipsis.userInfo.messageInfo.thread
+      thread: ellipsis.event.message ? ellipsis.event.message.thread : undefined
     }).then(() => {
       ellipsis.success({ 
         issueLink: collibra.linkFor("asset", issueId),
