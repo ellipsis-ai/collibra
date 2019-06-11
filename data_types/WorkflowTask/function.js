@@ -1,5 +1,5 @@
 function(ellipsis) {
-  const moment = require('moment');
+  const moment = require('moment-timezone');
 const CollibraApi = require('collibra-api');
 
 CollibraApi(ellipsis).then(api => {

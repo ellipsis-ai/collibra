@@ -1,0 +1,13 @@
+[ {
+  "text" : ".*\\bdue date\\b",
+  "requiresMention" : true,
+  "isRegex" : true,
+  "caseSensitive" : false,
+  "triggerType" : "MessageSent"
+}, {
+  "text" : "^how urgent.*",
+  "requiresMention" : true,
+  "isRegex" : true,
+  "caseSensitive" : false,
+  "triggerType" : "MessageSent"
+} ]

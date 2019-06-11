@@ -1,5 +1,5 @@
 function(ellipsis) {
-  const moment = require('moment');
+  const moment = require('moment-timezone');
 const getLogin = require('saved-login').getLoginForCurrentUser;
 const CollibraApi = require('collibra-api');
 

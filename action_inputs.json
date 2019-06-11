@@ -99,6 +99,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "GZsFDv9HQcq44QEHX_VSPw",
+  "name" : "message",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `message`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "HlHhEDFgSISxzWUDr60jhw",
   "name" : "community",
   "paramType" : {
