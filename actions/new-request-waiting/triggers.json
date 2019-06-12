@@ -1,6 +1,6 @@
 [ {
   "text" : "check for requests",
-  "requiresMention" : true,
+  "requiresMention" : false,
   "isRegex" : false,
   "caseSensitive" : false,
   "triggerType" : "MessageSent"
