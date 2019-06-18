@@ -5,7 +5,7 @@ if (!DemoHelpers.botMentionedOrIsKoen(ellipsis)) {
 } else {
   const name = ellipsis.event.user.fullName || "friend";
   ellipsis.success(`
-  Hello, ${name}. You have a new dataset registration request waiting.
+  Hello, ${name}. This is the Collibra Bot, built by Ellipsis. You have a new dataset registration request waiting.
 
   **[➡️ Go to task](https://dgc-koen-demo-dev.eu-west-1.lake.collibra.ai/tasks/my)**
   `, {
