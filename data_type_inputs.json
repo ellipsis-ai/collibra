@@ -15,7 +15,7 @@
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "Search by asset name.",
+  "question" : "Search by asset name (or type `...stop` to end the conversation)",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -25,7 +25,7 @@
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "Search by business term name.",
+  "question" : "Search by business term name (or type `...stop` to end the conversation)",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -35,7 +35,7 @@
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "Search by the acronym.",
+  "question" : "Search by the acronym (or type `...stop` to end the conversation)",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
@@ -65,7 +65,7 @@
     "exportId" : "Text",
     "name" : "Text"
   },
-  "question" : "Search by report name.",
+  "question" : "Search by report name (or type `...stop` to end the conversation)",
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 } ]
