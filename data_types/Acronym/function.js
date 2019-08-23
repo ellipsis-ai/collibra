@@ -1,4 +1,4 @@
 function(searchQuery, ellipsis) {
-  const addableAssetsMatching = require('asset-helpers').addableAssetsMatching;
-addableAssetsMatching(ellipsis, searchQuery, { assetTypeName: "Acronym" }).then(ellipsis.success);
+  const assetsMatching = require('asset-helpers').assetsMatching;
+assetsMatching(ellipsis, searchQuery, { assetTypeName: "Acronym" }).then(ellipsis.success);
 }

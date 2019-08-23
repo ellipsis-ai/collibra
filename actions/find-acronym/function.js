@@ -1,4 +1,4 @@
 function(acronym, ellipsis) {
-  const respondWithChosenAssetOrAddNew = require('asset-helpers').respondWithChosenAssetOrAddNew;
-respondWithChosenAssetOrAddNew(ellipsis, acronym, { assetTypeName: "Acronym"});
+  const respondWithChosenAsset = require('asset-helpers').respondWithChosenAsset;
+respondWithChosenAsset(ellipsis, acronym, { assetTypeName: "Acronym"});
 }

@@ -34,18 +34,6 @@ CollibraApi(ellipsis).then(collibra => {
             actionName: "find-report",
             allowOthers: true,
             allowMultipleSelections: true
-          },
-          {
-            label: "Find a business steward",
-            actionName: "find-business-steward",
-            allowOthers: true,
-            allowMultipleSelections: true
-          },
-          {
-            label: "Discuss an issue",
-            actionName: "discuss-issue-trigger",
-            allowOthers: true,
-            allowMultipleSelections: true
           }
         ]
       });
