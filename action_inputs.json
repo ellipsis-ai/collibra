@@ -42,8 +42,8 @@
   "exportId" : "5GOAOTDiTK6ypna9pguniQ",
   "name" : "asset",
   "paramType" : {
-    "exportId" : "suoS5VG6ReeYlV8hr7uHqA",
-    "name" : "AddableAsset"
+    "exportId" : "DkBIv7E5RI21VHDFKU5CbA",
+    "name" : "NonAddableAsset"
   },
   "question" : "Which asset are you looking for?",
   "isSavedForTeam" : false,
