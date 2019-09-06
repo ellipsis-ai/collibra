@@ -15,6 +15,7 @@ function matchWordsFor(text) {
   let words = 
     text.split(" ").
     map(ea => ea.replace(/[^a-zA-Z0-9]/gi, "")).
+    map(ea => ea.toLowerCase()).
     filter(ea => ea.length);
   return sw.removeStopwords(words);
 }
@@ -44,26 +45,24 @@ function matchesFor(word, api) {
       const assetWords = matchWordsFor(ea.displayName);
       return assetWords.some(ea => fm.get(ea).distance > MATCH_THRESHOLD);
     });
-    return Promise.all(assetsToUse.map(ea => withDefinitionsFor(ea, api))).then(collibraMatches => {
-      return Promise.all(collibraMatches.map(match => {
-        const toLookUp = matchWordsFor(match.name);
-        return Promise.all(toLookUp.map(word => {
-          return withDictionaryDefinitionsFor(word);
-        })).then(possibleDictionaryMatches => {
-          const dictionaryMatches = possibleDictionaryMatches.filter(ea => ea != null);
-          return Object.assign({}, match, { dictionary: dictionaryMatches, hasDictionaryMatches: !!dictionaryMatches.length });
-        });
-      }));
-    });
+    return Promise.all(assetsToUse.map(ea => withDefinitionsFor(ea, api)));
   });
 }
 
 function withDefinitionsFor(asset, api) {
   return api.definitionAttributesFor(asset.id).then(attrs => {
-    return {
-      name: asset.displayName,
-      definitions: attrs.map(formatAttribute).filter(ea => ea.length > 0)
-    };
+    const toLookUp = matchWordsFor(asset.displayName);
+    return Promise.all(toLookUp.map(word => {
+      return withDictionaryDefinitionsFor(word);
+    })).then(possibleDictionaryMatches => {
+      const dictionaryMatches = possibleDictionaryMatches.filter(ea => ea != null);
+      return {
+        name: asset.displayName,
+        definitions: attrs.map(formatAttribute).filter(ea => ea.length > 0),
+        dictionary: dictionaryMatches, 
+        hasDictionaryMatches: !!dictionaryMatches.length
+      };
+    });
   });
 }
 
