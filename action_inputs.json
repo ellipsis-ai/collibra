@@ -239,6 +239,16 @@
   "isSavedForTeam" : false,
   "isSavedForUser" : false
 }, {
+  "exportId" : "kz-HnP-KTK618K4QkXjM5w",
+  "name" : "userInput1",
+  "paramType" : {
+    "exportId" : "Text",
+    "name" : "Text"
+  },
+  "question" : "What is the value for `userInput1`?",
+  "isSavedForTeam" : false,
+  "isSavedForUser" : false
+}, {
   "exportId" : "n1cunQCvRoGPFJPcUzG0JA",
   "name" : "password",
   "paramType" : {

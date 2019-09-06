@@ -1,0 +1,7 @@
+[ {
+  "text" : "start definition listener",
+  "requiresMention" : true,
+  "isRegex" : false,
+  "caseSensitive" : false,
+  "triggerType" : "MessageSent"
+} ]
