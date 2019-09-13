@@ -5,6 +5,6 @@ api.actions.listen({
   actionName: "passive-find-definition",
   copilot: true
 }).then(res => {
-  ellipsis.success(`OK, I'm listening. You can follow along at: ${ellipsis.apiBaseUrl}/copilot/${res}`);
+  ellipsis.success(`OK, I'm listening. [Follow along here](${ellipsis.apiBaseUrl}/copilot/${res})`);
 });
 }
